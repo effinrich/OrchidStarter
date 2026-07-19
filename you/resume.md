@@ -4,7 +4,7 @@ Elizabethton, TN · 843-834-0041 · richtillman@pm.me · linkedin.com/in/effinri
 **Key metrics:** 5,700+ npm installs · ~$400K/mo revenue lift · 30% dev-time reduction · 200-component design system · IC → Engineering Director · 15 years
 
 ## SUMMARY
-Principal Frontend Engineer with 15 years building production UI systems, specializing in React/TypeScript design systems and Storybook-driven development. Founder of ForgeKit (open-source CLI + MCP server suite bridging Figma to React, 5,700+ npm installs). IC to Engineering Director across five 0-to-1 startups. Seeking Principal / Senior Frontend, Product Engineer, and design-systems/developer-tooling roles.
+Principal Frontend Engineer with 15 years building production UI systems, specializing in React/TypeScript design systems and Storybook-driven development. Founder of ForgeKit (open-source CLI + MCP server suite bridging Figma to React, 5,700+ npm installs). IC to Engineering Director across five 0-to-1 startups. Ships products end-to-end — frontend-deep, self-sufficient across the stack. Seeking Principal / Senior Frontend, Product Engineer, and design-systems/developer-tooling roles.
 
 ## EXPERIENCE
 ### ForgeKit — Founder & Principal Engineer
