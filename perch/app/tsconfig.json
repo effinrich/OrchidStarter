@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["vinxi/types/client"],
+    "paths": { "~/*": ["./app/*"], "styled-system/*": ["./styled-system/*"] },
+    "baseUrl": "."
+  },
+  "include": ["app", "styled-system"]
+}

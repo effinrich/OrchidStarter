@@ -1,0 +1,18 @@
+:root { font-family: Arial, Helvetica, sans-serif; color: #111; }
+body { margin: 0; background: #f6f7f9; }
+.app { max-width: 720px; margin: 40px auto; background: #fff; padding: 24px 28px;
+  border: 1px solid #e3e6ea; border-radius: 10px; }
+h1 { font-size: 20px; margin: 0 0 4px; }
+.subtitle { color: #667; font-size: 13px; margin: 0 0 20px; }
+label.field { display: block; font-size: 12px; font-weight: 700; color: #445; margin: 0 0 6px; }
+select { width: 100%; padding: 8px; font-size: 14px; border: 1px solid #cfd4da; border-radius: 6px; margin-bottom: 18px; }
+.txn { display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 10px 12px; border: 1px solid #eef0f2; border-radius: 8px; margin-bottom: 8px; }
+.txn .who { font-weight: 600; }
+.txn .meta { color: #778; font-size: 12px; }
+.txn .amt { font-variant-numeric: tabular-nums; font-weight: 700; }
+.approve { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #556; }
+button.viewmore { margin-top: 10px; padding: 9px 16px; font-size: 14px; border: 1px solid #2a5db0;
+  background: #2a5db0; color: #fff; border-radius: 6px; cursor: pointer; }
+button.viewmore:disabled { opacity: .5; cursor: default; }
+.empty { color: #889; font-size: 13px; padding: 8px 0; }
