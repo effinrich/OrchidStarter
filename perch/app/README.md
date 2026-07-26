@@ -38,3 +38,21 @@ Set env for live voice: `ELEVENLABS_API_KEY`, `PERCH_DEFAULT_AGENT_ID`.
   design (Shadow DOM, one script tag) — the one place inline styles are required.
 - This app is the product surface (landing + dashboard). It supersedes the static
   `perch/apps/site` demo for the real thing.
+
+## Auth + saved configs (Supabase)
+The dashboard is auth-gated; each user's widget configs are saved in Supabase and
+protected by row-level security (owner-only).
+
+1. Create a Supabase project. Copy the **Project URL** + **anon key**.
+2. Set env (`.env`, see `.env.example`): `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`.
+3. Run the migration: paste `supabase/migrations/20260101000000_widgets.sql` into the
+   Supabase SQL editor (or `supabase db push` with the CLI). It creates the `widgets`
+   table + RLS policies (`select/insert/update/delete` limited to `auth.uid() = user_id`).
+4. Enable **Email** auth in Supabase (Authentication → Providers). For local dev you can
+   turn off email confirmation so sign-up logs you straight in.
+
+**Security model:** the browser only ever holds the public anon key + a user JWT. RLS is
+the real gate — a user can never read or write another user's rows, even though queries
+run client-side. (Same posture as TokenCast: trust RLS, not the client.)
+
+Routes: `/login` (email/password), `/dashboard` (create/save/delete widgets → copy embed).
