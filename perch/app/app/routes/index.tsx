@@ -3,10 +3,10 @@ import { Tabs } from "@ark-ui/react/tabs"
 import { css } from "styled-system/css"
 import { Button } from "~/components/ui/button"
 import { GlassPanel } from "~/components/GlassPanel"
+import { PerchEmbed } from "~/components/PerchEmbed"
 
 export const Route = createFileRoute("/")({ component: Landing })
 
-const wrap = css({ maxW: "5xl", mx: "auto", px: "6" })
 
 const SNIPPETS: Record<string, string> = {
   html: `<script src="https://cdn.perch.app/perch.js"
@@ -100,6 +100,7 @@ function Landing() {
           ))}
         </div>
       </section>
+      <PerchEmbed title="Ask Perch" />
     </main>
   )
 }
