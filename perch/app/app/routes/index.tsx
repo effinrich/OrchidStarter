@@ -100,7 +100,7 @@ function Landing() {
           ))}
         </div>
       </section>
-      <PerchEmbed title="Ask Perch" />
+      <PerchEmbed title="Ask Perch" mock /> {/* mock demo; remove `mock` once your agent + key are set */}
     </main>
   )
 }

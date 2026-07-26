@@ -28,6 +28,8 @@
     // ElevenLabs Conversational AI client, loaded on demand (buildless).
     // Pin a version in production, e.g. https://esm.sh/@elevenlabs/client@0.x
     sdkUrl: "https://esm.sh/@elevenlabs/client",
+    // Mock mode: scripts a fake conversation (no key, no endpoint) for demos/recordings.
+    mock: false,
   };
 
   function readScriptConfig() {
@@ -35,7 +37,7 @@
     if (!el) return {};
     var d = el.dataset || {};
     var cfg = {};
-    ["agentId", "sessionUrl", "accent", "accent2", "position", "label", "title", "sdkUrl"].forEach(function (k) {
+    ["agentId", "sessionUrl", "accent", "accent2", "position", "label", "title", "sdkUrl", "mock"].forEach(function (k) {
       if (d[k]) cfg[k] = d[k];
     });
     return cfg;
@@ -156,18 +158,45 @@
     if (this.state === STATE.LIVE || this.state === STATE.CONNECTING) this.hangup(); else this.connect();
   };
 
-  Widget.prototype._set = function (state, msg) {
+  Widget.prototype._set = function (state, msg, mode) {
     this.state = state;
     this.status.textContent = msg || "";
     var live = state === STATE.LIVE;
     this.talkBtn.classList.toggle("live", live);
     this.wave.classList.toggle("live", live);
     this.talkBtn.querySelector("span").textContent =
-      live ? "Listening…" : state === STATE.CONNECTING ? "Connecting…" : "Tap to talk";
+      state === STATE.CONNECTING ? "Connecting…"
+        : live ? (mode === "speaking" ? "Speaking…" : "Listening…")
+        : "Tap to talk";
+  };
+
+  // Scripted fake conversation — no key, no endpoint. Great for demos / recordings.
+  Widget.prototype._runMock = function () {
+    var self = this;
+    clearTimeout(this._mockT);
+    var turns = [
+      { mode: "listening", text: "", ms: 1500 },
+      { mode: "speaking", text: "Hey! I'm your Perch assistant — how can I help?", ms: 2600 },
+      { mode: "listening", text: "", ms: 1600 },
+      { mode: "speaking", text: "Sure — I can walk you through that. One sec…", ms: 2500 },
+      { mode: "listening", text: "", ms: 1600 },
+      { mode: "speaking", text: "Done! Anything else?", ms: 2200 },
+    ];
+    var i = 0;
+    this._set(STATE.CONNECTING, "Starting session…");
+    var step = function () {
+      if (self.state === STATE.IDLE) return; // stopped by hangup
+      if (i >= turns.length) i = 0; // loop the demo
+      var t = turns[i++];
+      self._set(STATE.LIVE, t.text, t.mode);
+      self._mockT = setTimeout(step, t.ms);
+    };
+    this._mockT = setTimeout(step, 800);
   };
 
   Widget.prototype.connect = async function () {
-    if (!this.cfg.sessionUrl) { this._set(STATE.ERROR, "No sessionUrl configured."); return; }
+    // Mock mode (or no endpoint configured): run the scripted demo conversation.
+    if (this.cfg.mock === true || this.cfg.mock === "true" || !this.cfg.sessionUrl) { this._runMock(); return; }
     this._set(STATE.CONNECTING, "Starting session…");
     var self = this;
     try {
@@ -178,7 +207,7 @@
       });
       if (!res.ok) throw new Error("session " + res.status);
       var data = await res.json(); // { signedUrl }
-      if (!data || !data.signedUrl) { this._set(STATE.LIVE, "Demo mode — server returned no signedUrl."); return; }
+      if (!data || !data.signedUrl) { this._runMock(); return; }
 
       // 2) Load the ElevenLabs Conversational AI client on demand (no build step),
       //    then start the live mic <-> agent session (WebRTC; SDK requests mic permission).
@@ -194,7 +223,7 @@
         },
         onModeChange: function (m) {
           if (self.state !== STATE.LIVE) return;
-          self._set(STATE.LIVE, m && m.mode === "speaking" ? "Speaking…" : "Listening…");
+          self._set(STATE.LIVE, "", m && m.mode === "speaking" ? "speaking" : "listening");
         },
         onError: function (e) { self._set(STATE.ERROR, "Error: " + ((e && e.message) || e)); },
       });
@@ -208,6 +237,7 @@
   };
 
   Widget.prototype.hangup = async function () {
+    clearTimeout(this._mockT);
     try { if (this.conversation && this.conversation.endSession) await this.conversation.endSession(); } catch (e) {}
     this.conversation = null;
     this._set(STATE.IDLE, "");

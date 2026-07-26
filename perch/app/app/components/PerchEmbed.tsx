@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 
-type Props = { agentId?: string; sessionUrl?: string; accent?: string; position?: string; title?: string }
+type Props = { agentId?: string; sessionUrl?: string; accent?: string; position?: string; title?: string; mock?: boolean }
 
 // Client-only: injects the vanilla perch.js core (served from /public) and lets it
 // self-mount from its data-* attributes. The buildless widget is the one place
@@ -11,6 +11,7 @@ export function PerchEmbed({
   accent = "#6D5EF6",
   position = "bottom-right",
   title = "Ask Perch",
+  mock = false,
 }: Props) {
   useEffect(() => {
     if (typeof document === "undefined") return
@@ -24,6 +25,7 @@ export function PerchEmbed({
     s.dataset.position = position
     s.dataset.title = title
     if (agentId) s.dataset.agentId = agentId
+    if (mock) s.dataset.mock = "true"
     document.body.appendChild(s)
     return () => {
       ;(window as unknown as { Perch?: { close?: () => void } }).Perch?.close?.()
