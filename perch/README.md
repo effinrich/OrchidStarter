@@ -1,3 +1,26 @@
+# Perch
+
+Drop-in voice AI for any website. Powered by ElevenLabs Conversational AI.
+This is a pnpm + Turborepo monorepo.
+
+## Layout
+- `app/` .............. the product: TanStack Start app (landing + dashboard + session API). `perch-app`
+- `packages/embed/` ... `@perch/embed` — the vanilla one-script-tag widget (zero build, Shadow DOM)
+- `packages/react/` ... `@perch/react` — React SDK wrapping the core
+- `apps/site/` ........ static HTML demo landing (no build; deploy as a folder)
+- `server/` ........... standalone serverless session-endpoint reference
+- `brand/`, `docs/` ... brand kit + integration guides
+
+## Quick start
+```bash
+pnpm install
+pnpm codegen     # panda codegen for the app (generates app/styled-system)
+pnpm dev         # runs the app at http://localhost:3000
+```
+Env for live voice + auth: see `app/.env.example`.
+
+---
+
 # Perch — give your site a voice
 
 Drop-in voice AI for any website. **One script tag**, or a **React SDK**. Powered by

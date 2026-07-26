@@ -1,0 +1,15 @@
+{
+  "name": "perch",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Perch — drop-in voice AI for any website. Powered by ElevenLabs.",
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "dev": "pnpm --filter perch-app dev",
+    "codegen": "pnpm --filter perch-app codegen",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": { "turbo": "^2.3.0" }
+}
