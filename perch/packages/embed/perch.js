@@ -25,6 +25,9 @@
     position: "bottom-right",
     label: "Talk to us",
     title: "Voice assistant",
+    // ElevenLabs Conversational AI client, loaded on demand (buildless).
+    // Pin a version in production, e.g. https://esm.sh/@elevenlabs/client@0.x
+    sdkUrl: "https://esm.sh/@elevenlabs/client",
   };
 
   function readScriptConfig() {
@@ -32,7 +35,7 @@
     if (!el) return {};
     var d = el.dataset || {};
     var cfg = {};
-    ["agentId", "sessionUrl", "accent", "accent2", "position", "label", "title"].forEach(function (k) {
+    ["agentId", "sessionUrl", "accent", "accent2", "position", "label", "title", "sdkUrl"].forEach(function (k) {
       if (d[k]) cfg[k] = d[k];
     });
     return cfg;
@@ -166,32 +169,46 @@
   Widget.prototype.connect = async function () {
     if (!this.cfg.sessionUrl) { this._set(STATE.ERROR, "No sessionUrl configured."); return; }
     this._set(STATE.CONNECTING, "Starting session…");
+    var self = this;
     try {
+      // 1) Ask YOUR server for a short-lived signed URL (keeps the API key server-side).
       var res = await fetch(this.cfg.sessionUrl, {
         method: "POST", headers: { "content-type": "application/json" },
         body: JSON.stringify({ agentId: this.cfg.agentId }),
       });
       if (!res.ok) throw new Error("session " + res.status);
       var data = await res.json(); // { signedUrl }
+      if (!data || !data.signedUrl) { this._set(STATE.LIVE, "Demo mode — server returned no signedUrl."); return; }
 
-      // === ElevenLabs Conversational AI plugs in HERE ===
-      //   import { Conversation } from "@elevenlabs/client"
-      //   this.conversation = await Conversation.startSession({
-      //     signedUrl: data.signedUrl,
-      //     onModeChange: (m) => this._set(STATE.LIVE, m.mode === "speaking" ? "Speaking…" : "Listening…"),
-      //     onDisconnect: () => this._set(STATE.ENDED, "Ended."),
-      //     onError: (e) => this._set(STATE.ERROR, String(e)),
-      //   })
-
-      if (!data || !data.signedUrl) { this._set(STATE.LIVE, "Demo mode — wire the ElevenLabs SDK here."); return; }
-      this._set(STATE.LIVE, "Connected.");
+      // 2) Load the ElevenLabs Conversational AI client on demand (no build step),
+      //    then start the live mic <-> agent session (WebRTC; SDK requests mic permission).
+      var mod = await import(/* @vite-ignore */ this.cfg.sdkUrl);
+      var Conversation = mod.Conversation;
+      this.conversation = await Conversation.startSession({
+        signedUrl: data.signedUrl,
+        onStatusChange: function (s) {
+          var st = s && s.status;
+          if (st === "connected") self._set(STATE.LIVE, "Connected.");
+          else if (st === "disconnected") self._set(STATE.IDLE, "");
+          else if (st === "connecting") self._set(STATE.CONNECTING, "Connecting…");
+        },
+        onModeChange: function (m) {
+          if (self.state !== STATE.LIVE) return;
+          self._set(STATE.LIVE, m && m.mode === "speaking" ? "Speaking…" : "Listening…");
+        },
+        onError: function (e) { self._set(STATE.ERROR, "Error: " + ((e && e.message) || e)); },
+      });
     } catch (e) {
-      this._set(STATE.ERROR, "Couldn't connect. Check your session endpoint.");
+      var s = String((e && e.message) || e);
+      var msg = /permission|NotAllowed|denied/i.test(s) ? "Microphone permission needed."
+        : /import|module|fetch/i.test(s) ? "Couldn't load the voice SDK."
+        : "Couldn't connect. Check your session endpoint.";
+      this._set(STATE.ERROR, msg);
     }
   };
 
-  Widget.prototype.hangup = function () {
-    // if (this.conversation) this.conversation.endSession()
+  Widget.prototype.hangup = async function () {
+    try { if (this.conversation && this.conversation.endSession) await this.conversation.endSession(); } catch (e) {}
     this.conversation = null;
     this._set(STATE.IDLE, "");
   };

@@ -41,12 +41,12 @@ Browser (perch.js)  ──►  Your /session endpoint  ──►  ElevenLabs (si
 - **React:** [docs/react.md](docs/react.md)
 - **Server endpoint:** [docs/server.md](docs/server.md)
 
-## Status / what's stubbed
-- ✅ Vanilla widget UI (Shadow-DOM isolated, call states) — runnable today.
-- ✅ React SDK wrapper, server proxy, brand kit, docs.
-- 🔌 The live ElevenLabs Conversational AI connection is marked with a clear TODO in
-  `perch.js` (`connect()`) and `server/session.mjs` — drop in `@elevenlabs/client` +
-  your API key to go live.
+## Status
+- ✅ Liquid-glass widget UI (Shadow-DOM isolated, live call states).
+- ✅ React SDK, server proxy, brand kit, docs.
+- ✅ **Live ElevenLabs Conversational AI wired** — `connect()` mints a signed URL via
+  your endpoint, loads `@elevenlabs/client` on demand, and runs the WebRTC session.
+  Add an agent + session endpoint + HTTPS to go live: see [docs/go-live.md](docs/go-live.md).
 
 ## Roadmap
 - Config dashboard (point an agent at a knowledge base, pick a voice).

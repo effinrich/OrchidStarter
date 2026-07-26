@@ -11,7 +11,7 @@ export async function getSignedUrl(agentId) {
 
   // ElevenLabs Conversational AI: request a signed URL for the agent.
   const r = await fetch(
-    "https://api.elevenlabs.io/v1/convai/conversation/get-signed-url?agent_id=" +
+    "https://api.elevenlabs.io/v1/convai/conversation/get_signed_url?agent_id=" +
       encodeURIComponent(agentId),
     { headers: { "xi-api-key": key } }
   );
