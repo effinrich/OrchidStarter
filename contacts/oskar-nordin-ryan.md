@@ -15,6 +15,11 @@
 ### Prior draft (superseded — written before Perch existed)
 > Hi Oskar — thanks for the invite to ElevenLabs' React/TS assessment, excited to dive in. I build MCP/AI-frontend tooling and recently did a stretch of model-evaluation contract work, so ElevenLabs is squarely where I want to be. Wanted to connect and put a face to the name. — Rich
 
+## Draft email (follow-up — reply in the original invite thread, requesting the link)
+> Hi Oskar — following up on the React/TS CoderPad screen you mentioned. I haven't been able to locate a link for it (or it may have expired) — could you send over a fresh one? Happy to get it done quickly once I have it. Thanks — Rich
+
+Send as a reply in the existing invite thread (not cold) — logistics ask, separate from the LinkedIn note above, which stays goodwill-only.
+
 ## Notes
 - ElevenLabs process: recruiter screen → async CoderPad (React/TS, 90 min) → behavioral → practical live coding → product decomposition (+ maybe CTO).
 - Strong fit: they favor founder/entrepreneur builders + end-to-end product experience (Rich = ForgeKit founder). Practical, remote, flexible.
