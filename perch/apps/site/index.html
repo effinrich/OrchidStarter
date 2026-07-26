@@ -4,6 +4,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Perch — give your site a voice</title>
+  <link rel="icon" href="./mark.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#0b0d1a" />
+  <meta property="og:title" content="Perch — give your site a voice" />
+  <meta property="og:description" content="A liquid-glass voice assistant for any website. One script tag, powered by ElevenLabs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 <style>
   :root{--iris:#6D5EF6;--aqua:#22C1C3;--ink:#0b0d1a;--mut:#9aa3bd}
   *{box-sizing:border-box;margin:0}
@@ -159,7 +166,7 @@
 
   <!-- the product, live on its own landing page (demo mode) -->
   <script src="./perch.js"
-    data-agent-id="demo-agent" data-session-url=""
+    data-agent-id="" data-session-url="/api/perch/session"
     data-accent="#6D5EF6" data-position="bottom-right" data-title="Ask Perch" defer></script>
 </body>
 </html>
