@@ -3,30 +3,44 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Perch — embed demo</title>
+    <title>Perch — voice for your site</title>
     <style>
-      body{font-family:'Segoe UI',Helvetica,Arial,sans-serif;margin:0;background:#F6F7F9;color:#151726}
-      .hero{max-width:680px;margin:80px auto;padding:0 20px}
-      h1{font-size:34px;margin:0 0 8px} p{color:#667085;line-height:1.5}
-      code{background:#eceef2;padding:2px 6px;border-radius:5px}
+      :root{--iris:#6D5EF6;--aqua:#22C1C3}
+      *{box-sizing:border-box}
+      body{font-family:'Segoe UI',Helvetica,Arial,sans-serif;margin:0;min-height:100vh;color:#eef1f8;
+        background:radial-gradient(1200px 700px at 80% -10%,#2a2350,transparent),
+                   radial-gradient(1000px 600px at 0% 100%,#123a3d,transparent),#0b0d1a;overflow-x:hidden}
+      .blob{position:fixed;border-radius:50%;filter:blur(80px);opacity:.5;z-index:0}
+      .b1{width:380px;height:380px;background:var(--iris);top:-80px;left:-60px}
+      .b2{width:420px;height:420px;background:var(--aqua);bottom:-120px;right:-80px}
+      .wrap{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:120px 24px}
+      .pill{display:inline-block;font-size:12px;letter-spacing:.5px;padding:6px 12px;border-radius:999px;
+        background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(10px)}
+      h1{font-size:56px;line-height:1.05;margin:18px 0 12px;font-weight:800;
+        background:linear-gradient(120deg,#fff,#c9c3ff 60%,#9fe9ea);-webkit-background-clip:text;background-clip:text;color:transparent}
+      p.sub{font-size:18px;color:#b9c0d4;line-height:1.55;max-width:520px}
+      .card{margin-top:34px;padding:20px 22px;border-radius:18px;background:rgba(255,255,255,.06);
+        border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(16px) saturate(160%);max-width:560px}
+      code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:#dfe3f2}
+      .hint{margin-top:26px;color:#8b93ab;font-size:13px}
     </style>
   </head>
   <body>
-    <div class="hero">
-      <h1>Acme Co.</h1>
-      <p>This is a demo host page. The <b>Perch</b> voice bubble is bottom-right —
-         click it, then <em>Tap to talk</em>. (Runs in demo mode until you point
-         <code>data-session-url</code> at a real endpoint + wire the ElevenLabs SDK.)</p>
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="wrap">
+      <span class="pill">POWERED BY ELEVENLABS · DEMO</span>
+      <h1>Give your site a voice.</h1>
+      <p class="sub">Perch adds a liquid-glass voice assistant to any website — one script tag.
+        Tap the orb in the corner and start talking.</p>
+      <div class="card">
+        <code>&lt;script src="perch.js" data-agent-id="…" data-session-url="…" defer&gt;&lt;/script&gt;</code>
+      </div>
+      <p class="hint">↘ The Perch bubble is bottom-right. Click it, then <em>Tap to talk</em>.
+        (Demo mode until you wire the ElevenLabs SDK + a session endpoint.)</p>
     </div>
 
-    <!-- the entire integration: one script tag -->
-    <script
-      src="./perch.js"
-      data-agent-id="demo-agent"
-      data-session-url=""
-      data-accent="#6D5EF6"
-      data-position="bottom-right"
-      data-title="Ask Acme"
-      defer></script>
+    <script src="./perch.js"
+      data-agent-id="demo-agent" data-session-url=""
+      data-accent="#6D5EF6" data-position="bottom-right" data-title="Ask Acme" defer></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 /**
  * Perch — drop-in voice assistant for any website.
  * Vanilla JS, zero dependencies, zero build. One <script> tag.
+ * Liquid-glass UI: glassmorphism panel, animated gradient orbs, live waveform.
  *
  * Usage (HTML):
  *   <script src="https://cdn.perch.app/perch.js"
@@ -10,8 +11,7 @@
  *           data-position="bottom-right"
  *           defer></script>
  *
- * The script auto-initializes from its own data-* attributes, and also exposes a
- * global `Perch` API: Perch.init(config), Perch.open(), Perch.close().
+ * Global API: Perch.init(config), Perch.open(), Perch.close().
  */
 (function () {
   "use strict";
@@ -19,25 +19,22 @@
 
   var DEFAULTS = {
     agentId: "",
-    sessionUrl: "",           // your server endpoint that mints an ElevenLabs signed URL
+    sessionUrl: "",
     accent: "#6D5EF6",
-    position: "bottom-right", // bottom-right | bottom-left
+    accent2: "#22C1C3",
+    position: "bottom-right",
     label: "Talk to us",
     title: "Voice assistant",
   };
 
   function readScriptConfig() {
-    var el = document.currentScript ||
-      document.querySelector('script[src*="perch.js"]');
+    var el = document.currentScript || document.querySelector('script[src*="perch.js"]');
     if (!el) return {};
     var d = el.dataset || {};
     var cfg = {};
-    if (d.agentId) cfg.agentId = d.agentId;
-    if (d.sessionUrl) cfg.sessionUrl = d.sessionUrl;
-    if (d.accent) cfg.accent = d.accent;
-    if (d.position) cfg.position = d.position;
-    if (d.label) cfg.label = d.label;
-    if (d.title) cfg.title = d.title;
+    ["agentId", "sessionUrl", "accent", "accent2", "position", "label", "title"].forEach(function (k) {
+      if (d[k]) cfg[k] = d[k];
+    });
     return cfg;
   }
 
@@ -46,7 +43,7 @@
   function Widget(config) {
     this.cfg = Object.assign({}, DEFAULTS, config || {});
     this.state = STATE.IDLE;
-    this.conversation = null; // ElevenLabs Conversation instance lives here
+    this.conversation = null;
     this._build();
   }
 
@@ -55,11 +52,11 @@
     host.setAttribute("data-perch-host", "");
     host.style.position = "fixed";
     host.style.zIndex = "2147483000";
-    host.style[this.cfg.position.indexOf("left") > -1 ? "left" : "right"] = "20px";
-    host.style.bottom = "20px";
+    host.style[this.cfg.position.indexOf("left") > -1 ? "left" : "right"] = "22px";
+    host.style.bottom = "22px";
     document.body.appendChild(host);
 
-    var root = host.attachShadow({ mode: "open" }); // isolate from host page CSS
+    var root = host.attachShadow({ mode: "open" });
     root.innerHTML = this._css() + this._html();
     this.root = root;
 
@@ -67,6 +64,7 @@
     this.panel = root.querySelector(".panel");
     this.talkBtn = root.querySelector(".talk");
     this.status = root.querySelector(".status");
+    this.wave = root.querySelector(".wave");
 
     var self = this;
     this.fab.addEventListener("click", function () { self.open(); });
@@ -75,36 +73,74 @@
   };
 
   Widget.prototype._css = function () {
-    var a = this.cfg.accent;
+    var a = this.cfg.accent, b = this.cfg.accent2;
     return "<style>" +
-      ":host,*{box-sizing:border-box;font-family:'Segoe UI',Helvetica,Arial,sans-serif}" +
-      ".fab{width:60px;height:60px;border-radius:50%;border:0;cursor:pointer;" +
-      "background:linear-gradient(135deg," + a + ",#22C1C3);box-shadow:0 8px 24px rgba(20,23,38,.25);" +
-      "display:flex;align-items:center;justify-content:center}" +
-      ".fab svg{width:26px;height:26px}" +
-      ".panel{position:absolute;bottom:74px;right:0;width:300px;background:#fff;border-radius:16px;" +
-      "box-shadow:0 16px 48px rgba(20,23,38,.28);overflow:hidden;display:none}" +
-      ".panel.open{display:block}" +
-      ".hd{background:linear-gradient(135deg," + a + ",#22C1C3);color:#fff;padding:14px 16px;" +
-      "display:flex;align-items:center;justify-content:space-between}" +
-      ".hd b{font-size:14px}" +
-      ".close{background:transparent;border:0;color:#fff;font-size:18px;cursor:pointer;line-height:1}" +
-      ".body{padding:22px 16px;text-align:center}" +
-      ".talk{width:88px;height:88px;border-radius:50%;border:0;cursor:pointer;color:#fff;font-size:13px;font-weight:700;" +
-      "background:linear-gradient(135deg," + a + ",#22C1C3);box-shadow:0 8px 20px rgba(20,23,38,.2)}" +
-      ".talk.live{animation:pulse 1.4s infinite}" +
-      "@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(109,94,246,.5)}70%{box-shadow:0 0 0 16px rgba(109,94,246,0)}100%{box-shadow:0 0 0 0 rgba(109,94,246,0)}}" +
-      ".status{margin-top:14px;color:#667085;font-size:12px;min-height:16px}" +
-      ".brand{margin-top:16px;font-size:10px;color:#98a2b3}" +
+      ":host,*{box-sizing:border-box;font-family:'Segoe UI',Helvetica,Arial,sans-serif;margin:0}" +
+      "@keyframes pfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}" +
+      "@keyframes pspin{to{transform:rotate(360deg)}}" +
+      "@keyframes pin{from{opacity:0;transform:translateY(14px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}" +
+      "@keyframes pdrift1{0%,100%{transform:translate(0,0)}50%{transform:translate(34px,22px)}}" +
+      "@keyframes pdrift2{0%,100%{transform:translate(0,0)}50%{transform:translate(-28px,-22px)}}" +
+      "@keyframes pbounce{0%,100%{height:6px}50%{height:22px}}" +
+      "@keyframes ppulse{0%{box-shadow:0 0 0 0 " + rgba(a,.5) + ",0 14px 34px " + rgba(a,.42) + "}" +
+        "70%{box-shadow:0 0 0 24px " + rgba(a,0) + ",0 14px 34px " + rgba(a,.42) + "}" +
+        "100%{box-shadow:0 0 0 0 " + rgba(a,0) + ",0 14px 34px " + rgba(a,.42) + "}}" +
+      // FAB liquid-glass orb
+      ".fab{position:relative;width:64px;height:64px;border-radius:50%;border:0;cursor:pointer;overflow:hidden;" +
+        "background:linear-gradient(135deg," + a + "," + b + ");" +
+        "box-shadow:0 12px 32px " + rgba(a,.4) + ",inset 0 1px 0 rgba(255,255,255,.45);" +
+        "display:flex;align-items:center;justify-content:center;animation:pfloat 5s ease-in-out infinite;" +
+        "transition:transform .3s cubic-bezier(.2,.8,.2,1)}" +
+      ".fab:hover{transform:translateY(-2px) scale(1.06)}" +
+      ".fab::before{content:'';position:absolute;inset:-45%;background:conic-gradient(from 0deg," + a + "," + b + ",#8B7BFF," + a + ");" +
+        "animation:pspin 6s linear infinite;filter:blur(9px);opacity:.65}" +
+      ".fab svg{position:relative;z-index:1}" +
+      // Glass panel
+      ".panel{position:absolute;bottom:82px;right:0;width:322px;overflow:hidden;border-radius:26px;display:none;" +
+        "background:rgba(255,255,255,.55);-webkit-backdrop-filter:blur(26px) saturate(180%);backdrop-filter:blur(26px) saturate(180%);" +
+        "border:1px solid rgba(255,255,255,.65);box-shadow:0 26px 64px rgba(20,23,38,.34),inset 0 1px 0 rgba(255,255,255,.75)}" +
+      ".panel.open{display:block;animation:pin .34s cubic-bezier(.2,.9,.2,1)}" +
+      // aurora blobs
+      ".aurora{position:absolute;inset:0;overflow:hidden;z-index:0;pointer-events:none}" +
+      ".aurora i{position:absolute;width:190px;height:190px;border-radius:50%;filter:blur(44px);opacity:.5}" +
+      ".aurora i:nth-child(1){background:" + a + ";top:-46px;left:-34px;animation:pdrift1 13s ease-in-out infinite}" +
+      ".aurora i:nth-child(2){background:" + b + ";bottom:-54px;right:-34px;animation:pdrift2 15s ease-in-out infinite}" +
+      ".hd{position:relative;z-index:1;color:#151726;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;" +
+        "border-bottom:1px solid rgba(255,255,255,.45)}" +
+      ".hd b{font-size:14px;font-weight:700}" +
+      ".close{background:rgba(255,255,255,.45);border:0;color:#151726;width:26px;height:26px;border-radius:50%;font-size:15px;" +
+        "cursor:pointer;line-height:1;transition:background .2s}.close:hover{background:rgba(255,255,255,.85)}" +
+      ".body{position:relative;z-index:1;padding:28px 18px 22px;text-align:center}" +
+      // liquid talk orb
+      ".talk{position:relative;width:98px;height:98px;border-radius:50%;border:0;cursor:pointer;color:#fff;font-size:12px;font-weight:700;overflow:hidden;" +
+        "background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.5),transparent 42%),linear-gradient(135deg," + a + "," + b + ");" +
+        "box-shadow:0 14px 34px " + rgba(a,.42) + ",inset 0 2px 8px rgba(255,255,255,.5);" +
+        "transition:transform .25s cubic-bezier(.2,.8,.2,1)}" +
+      ".talk:hover{transform:scale(1.06)}" +
+      ".talk::before{content:'';position:absolute;inset:-30%;background:conic-gradient(from 90deg," + a + "," + b + ",#8B7BFF," + a + ");" +
+        "animation:pspin 5s linear infinite;filter:blur(11px);opacity:0;transition:opacity .3s}" +
+      ".talk.live::before{opacity:.85}.talk.live{animation:ppulse 1.6s ease-out infinite}" +
+      ".talk span{position:relative;z-index:1}" +
+      // waveform
+      ".wave{display:flex;gap:4px;justify-content:center;align-items:flex-end;height:24px;margin-top:18px;opacity:.3;transition:opacity .3s}" +
+      ".wave.live{opacity:1}" +
+      ".wave i{width:4px;height:6px;border-radius:3px;background:linear-gradient(" + a + "," + b + ")}" +
+      ".wave.live i{animation:pbounce 1s ease-in-out infinite}" +
+      ".wave.live i:nth-child(2){animation-delay:.12s}.wave.live i:nth-child(3){animation-delay:.24s}" +
+      ".wave.live i:nth-child(4){animation-delay:.32s}.wave.live i:nth-child(5){animation-delay:.16s}" +
+      ".status{position:relative;z-index:1;margin-top:14px;color:#475467;font-size:12px;min-height:16px}" +
+      ".brand{position:relative;z-index:1;margin-top:14px;font-size:10px;color:#98a2b3;letter-spacing:.3px}" +
       "</style>";
   };
 
   Widget.prototype._html = function () {
-    var mic = '<svg viewBox="0 0 24 24" fill="none"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Z" fill="#fff"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>';
+    var mic = '<svg viewBox="0 0 24 24" width="26" height="26" fill="none"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Z" fill="#fff"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>';
     return '<div class="panel" role="dialog" aria-label="' + esc(this.cfg.title) + '">' +
+      '<div class="aurora"><i></i><i></i></div>' +
       '<div class="hd"><b>' + esc(this.cfg.title) + '</b><button class="close" aria-label="Close">×</button></div>' +
       '<div class="body">' +
-      '<button class="talk" aria-label="Start talking">Tap to talk</button>' +
+      '<button class="talk" aria-label="Start talking"><span>Tap to talk</span></button>' +
+      '<div class="wave"><i></i><i></i><i></i><i></i><i></i></div>' +
       '<div class="status" aria-live="polite"></div>' +
       '<div class="brand">powered by Perch</div>' +
       '</div></div>' +
@@ -113,42 +149,40 @@
 
   Widget.prototype.open = function () { this.panel.classList.add("open"); };
   Widget.prototype.close = function () { this.panel.classList.remove("open"); if (this.state === STATE.LIVE) this.hangup(); };
-
   Widget.prototype.toggle = function () {
-    if (this.state === STATE.LIVE || this.state === STATE.CONNECTING) this.hangup();
-    else this.connect();
+    if (this.state === STATE.LIVE || this.state === STATE.CONNECTING) this.hangup(); else this.connect();
   };
 
   Widget.prototype._set = function (state, msg) {
     this.state = state;
     this.status.textContent = msg || "";
-    this.talkBtn.classList.toggle("live", state === STATE.LIVE);
-    this.talkBtn.textContent =
-      state === STATE.LIVE ? "Listening…" :
-      state === STATE.CONNECTING ? "Connecting…" : "Tap to talk";
+    var live = state === STATE.LIVE;
+    this.talkBtn.classList.toggle("live", live);
+    this.wave.classList.toggle("live", live);
+    this.talkBtn.querySelector("span").textContent =
+      live ? "Listening…" : state === STATE.CONNECTING ? "Connecting…" : "Tap to talk";
   };
 
   Widget.prototype.connect = async function () {
     if (!this.cfg.sessionUrl) { this._set(STATE.ERROR, "No sessionUrl configured."); return; }
     this._set(STATE.CONNECTING, "Starting session…");
     try {
-      // 1) Ask YOUR server for a short-lived signed URL (keeps the API key server-side).
-      var res = await fetch(this.cfg.sessionUrl, { method: "POST", headers: { "content-type": "application/json" },
-        body: JSON.stringify({ agentId: this.cfg.agentId }) });
+      var res = await fetch(this.cfg.sessionUrl, {
+        method: "POST", headers: { "content-type": "application/json" },
+        body: JSON.stringify({ agentId: this.cfg.agentId }),
+      });
       if (!res.ok) throw new Error("session " + res.status);
       var data = await res.json(); // { signedUrl }
 
-      // 2) === ElevenLabs Conversational AI plugs in HERE ===
-      //    import { Conversation } from "@elevenlabs/client"
-      //    this.conversation = await Conversation.startSession({
-      //      signedUrl: data.signedUrl,
-      //      onModeChange: (m) => this._set(STATE.LIVE, m.mode === "speaking" ? "Speaking…" : "Listening…"),
-      //      onDisconnect: () => this._set(STATE.ENDED, "Ended."),
-      //      onError: (e) => this._set(STATE.ERROR, String(e)),
-      //    })
-      //    (Requires mic permission; the SDK handles WebRTC + streaming audio.)
+      // === ElevenLabs Conversational AI plugs in HERE ===
+      //   import { Conversation } from "@elevenlabs/client"
+      //   this.conversation = await Conversation.startSession({
+      //     signedUrl: data.signedUrl,
+      //     onModeChange: (m) => this._set(STATE.LIVE, m.mode === "speaking" ? "Speaking…" : "Listening…"),
+      //     onDisconnect: () => this._set(STATE.ENDED, "Ended."),
+      //     onError: (e) => this._set(STATE.ERROR, String(e)),
+      //   })
 
-      // --- Demo fallback so the UI is runnable without keys: ---
       if (!data || !data.signedUrl) { this._set(STATE.LIVE, "Demo mode — wire the ElevenLabs SDK here."); return; }
       this._set(STATE.LIVE, "Connected.");
     } catch (e) {
@@ -162,8 +196,17 @@
     this._set(STATE.IDLE, "");
   };
 
-  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) {
-    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    });
+  }
+  function rgba(hex, alpha) {
+    var h = hex.replace("#", "");
+    if (h.length === 3) h = h[0] + h[0] + h[1] + h[1] + h[2] + h[2];
+    var n = parseInt(h, 16);
+    return "rgba(" + ((n >> 16) & 255) + "," + ((n >> 8) & 255) + "," + (n & 255) + "," + alpha + ")";
+  }
 
   var instance = null;
   var Perch = {
@@ -174,7 +217,6 @@
   };
   window.Perch = Perch;
 
-  // auto-init from the script tag's data-* attributes
   var auto = readScriptConfig();
   if (auto.agentId || auto.sessionUrl) {
     if (document.body) Perch.init(auto);
