@@ -1,0 +1,9 @@
+{
+  "name": "@perch/embed",
+  "version": "0.1.0",
+  "description": "Perch core — drop-in voice assistant, one <script> tag. Powered by ElevenLabs.",
+  "main": "perch.js",
+  "files": ["perch.js"],
+  "keywords": ["voice", "ai", "elevenlabs", "widget", "embed", "conversational-ai"],
+  "license": "MIT"
+}

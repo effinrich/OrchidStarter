@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perch — embed demo</title>
+    <style>
+      body{font-family:'Segoe UI',Helvetica,Arial,sans-serif;margin:0;background:#F6F7F9;color:#151726}
+      .hero{max-width:680px;margin:80px auto;padding:0 20px}
+      h1{font-size:34px;margin:0 0 8px} p{color:#667085;line-height:1.5}
+      code{background:#eceef2;padding:2px 6px;border-radius:5px}
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Acme Co.</h1>
+      <p>This is a demo host page. The <b>Perch</b> voice bubble is bottom-right —
+         click it, then <em>Tap to talk</em>. (Runs in demo mode until you point
+         <code>data-session-url</code> at a real endpoint + wire the ElevenLabs SDK.)</p>
+    </div>
+
+    <!-- the entire integration: one script tag -->
+    <script
+      src="./perch.js"
+      data-agent-id="demo-agent"
+      data-session-url=""
+      data-accent="#6D5EF6"
+      data-position="bottom-right"
+      data-title="Ask Acme"
+      defer></script>
+  </body>
+</html>
