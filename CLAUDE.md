@@ -13,3 +13,24 @@ Requirements for ALL resumes:
 - Verify the .docx extracts to clean linear text with each date under the right role before sending.
 
 Canonical ATS source: you/resume-ats.html (base). Tailored variants must follow the same ATS rules.
+
+## STACK & STYLING RULES (standing, from the user — ALWAYS unless explicitly overridden)
+
+**Framework**
+- If Next.js is the default / lazy / suggested choice, you MUST use **TanStack Start**
+  instead — and say so explicitly ("using TanStack Start, not Next.js").
+
+**Styling & components**
+- Default to **Panda CSS** + **Ark UI / Park UI**. NEVER reach for Tailwind or
+  shadcn/ui unless the user explicitly asks for them.
+- **Components first:** UI-kit components (Park UI) or custom components MUST take
+  priority over inline styling. Style via Panda recipes / `css()` / tokens — not inline
+  `style={{}}`.
+- **Lint against inline styles in ALL projects** (add an eslint rule, e.g.
+  `react/no-inline-styles` or `no-restricted-syntax` on JSXAttribute[name=style]).
+
+**The one exception — the embed widget (`perch/packages/embed/perch.js`)**
+- It ships as a single, dependency-free, zero-build `<script>` isolated in Shadow DOM,
+  so it MUST use inline/injected styles and cannot use Panda/Park UI. This is the
+  "unless otherwise stated" carve-out. Everything else (landing, dashboard, app
+  surfaces) follows the rules above.
