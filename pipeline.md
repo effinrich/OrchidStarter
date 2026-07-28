@@ -9,8 +9,8 @@
 | Sr. Staff Frontend | Hims & Hers | resume + cover + cheat sheet ready | apply |
 | Oskar Nordin Ryan (recruiter) | ElevenLabs — FE (React/TS) | assessment invited | connect on LinkedIn + take 90-min CoderPad screen (real link confirmed) |
 | — | Mochi Health — Sr/Staff Frontend Engineer | cheat sheet ready | interview Tue 7:00pm — you/mochi-cheat-sheet.md; **raise SF in-person 5x/wk vs. TN location early** |
-| — | Lemon.io — vetted dev network (not a single employer) | interview-scheduled: Wed 10:00am-12:15pm | this is their vetting interview (experience convo + theoretical Qs + practical task) to join the marketplace, not a specific client role |
-| — | RainFocus — Sr. UI Frontend Engineer | interview-scheduled: Wed 5:00pm | event-tech platform (Adobe/Cisco/IBM/Oracle clients); React/Svelte/Web Components, architecture + mentorship focus, Lehi UT (remote-friendly), H1B sponsor history |
+| — | Lemon.io — vetted dev network (not a single employer) | cheat sheet ready | interview Wed 10:00am-12:15pm — you/lemon-io-cheat-sheet.md; decide rate expectations beforehand |
+| — | RainFocus — Sr. UI Frontend Engineer | cheat sheet ready | interview Wed 5:00pm — you/rainfocus-cheat-sheet.md; own the Svelte/Web Components gap honestly, confirm remote status |
 | — | Wrapbook — role TBD | nda-received | review NDA terms before signing; production payroll/fintech platform |
 | — | Wing Assistant | closed-no (likely mismatch) | VA/BPO staffing platform, not aligned to Principal FE search — confirm skip |
 
