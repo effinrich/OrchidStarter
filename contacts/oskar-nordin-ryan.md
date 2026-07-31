@@ -5,12 +5,13 @@
 - **Why the LinkedIn note still matters:** goodwill + surfacing genuine pre-existing history with the company (see below) — a recruiter who knows that history nudges your file forward in an otherwise-automated pipeline.
 
 ## ⭐ History with ElevenLabs — the actual headline story
-Rich and his work partner **Clayton** built on ElevenLabs **within months of the company starting** — this was forgotten until Clayton reminded him.
-- **Santa Chat:** kids could call a phone number and have a real-feeling conversation with Santa, who'd ask for their gift list. Stack: ElevenLabs LLM/voice on a Heroku server + Deepgram. Web app included the phone flow plus an optional chat and voice-chat mode.
-- The phone-call/Santa framing aged fast ("quite an old thing" in Rich's words) — they **pivoted the same tech into Textation**: an avatar-creation service pushing toward an "avatar companion" product, same ElevenLabs + Deepgram stack plus image generation. All web app, no phone component.
-- **ElevenLabs liked it enough to give them 300k in tokens/credits** — direct signal the company itself valued what they built, very early in ElevenLabs' history.
-- This predates Perch by years and is a much stronger opener than "I build AI tooling" — it's "we already have a real relationship with your company that you may not even know about."
-- Verify before sending: rough date/year, and whether anything survives (old repo, screenshots, the actual token-grant email/correspondence) — would strengthen this further if findable.
+Rich and his work partner **Clayton** built on ElevenLabs **within months of the company starting** — this was forgotten until Clayton reminded him. Confirmed from the real READMEs (corrects the earlier verbal recap — get this right, Oskar will know the product):
+- **Santa Chat AI:** Next.js/React frontend + a Heroku AI backend. Kids could chat with, call, or text Santa. **ElevenLabs powered the voice/text-to-speech** (via Twilio for the phone calls); a separate LLM (ChatGPT) drove the chat responses; Stable Diffusion generated images. Real product, not a demo — Stripe-based "Magic Dust" token subscriptions, Google OAuth, MongoDB, analytics.
+- Pivoted into **Textation**: a general AI-companion/character platform, same bones plus **Deepgram for speech-to-text**, SadTalker for talking-head video, and a live WebSocket voice-chat path. ElevenLabs stayed the TTS layer throughout.
+- **ElevenLabs liked Santa Chat enough to give them 300k in tokens/credits** — direct signal the company itself valued what they built, very early in ElevenLabs' history.
+- This predates Perch by years and is a much stronger opener than "I build AI tooling" — it's "we already have a real relationship with your company that you may not even know about," backed by a real production integration (not a toy).
+- Still unconfirmed: exact year/date range, and whether the original token-grant correspondence survives anywhere — nice-to-have, not required to send the note below.
+- Now on the resume too (`you/resume-ats.html` / regenerated docx+pdf) — both listed under Projects.
 
 ## Draft note (connection request, <300 chars) — leads with the real history
 > Hi Oskar — small world: my partner Clayton and I built on ElevenLabs within months of the company starting (Santa Chat, then Textation) — you all gave us 300k in tokens for it. Would love to reconnect. — Rich
@@ -18,7 +19,7 @@ Rich and his work partner **Clayton** built on ElevenLabs **within months of the
 (208 chars)
 
 ## Fuller follow-up message (send after connecting — no char limit)
-> Hi Oskar — following up properly now that we're connected. A while back, my work partner Clayton and I built two projects on ElevenLabs within months of you all starting the company — Santa Chat (kids could call and talk to Santa, powered by your voice/LLM + Deepgram) and Textation (an avatar-companion product, same stack plus image gen). You all liked Santa Chat enough to give us 300k in tokens, which I'd honestly forgotten until Clayton brought it up recently. Since then I've kept building in the space — most recently Perch, a drop-in voice-widget on your Conversational AI API. Excited about the CoderPad screen and would love to talk more about where ElevenLabs is headed. — Rich
+> Hi Oskar — following up properly now that we're connected. A while back, my work partner Clayton and I built two projects on ElevenLabs within months of you all starting the company — Santa Chat AI (kids could call, chat, or text Santa, with your API powering the voice) and Textation (an AI-companion platform we pivoted it into, same ElevenLabs voice layer plus Deepgram, image gen, and talking-head video). You all liked Santa Chat enough to give us 300k in tokens, which I'd honestly forgotten until Clayton brought it up recently. Since then I've kept building in the space — most recently Perch, a drop-in voice-widget on your Conversational AI API. Excited about the CoderPad screen and would love to talk more about where ElevenLabs is headed. — Rich
 
 ### Prior drafts (superseded — kept for reference)
 > Hi Oskar — thanks for the ElevenLabs assessment invite. Since then I've been building Perch, a drop-in voice-widget on your Conversational AI API — part portfolio piece, part real product. Would love to connect. — Rich
