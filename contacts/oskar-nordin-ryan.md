@@ -32,4 +32,4 @@ Rich and his work partner **Clayton** built on ElevenLabs **within months of the
 ## Notes
 - ElevenLabs process: recruiter screen → async CoderPad (React/TS, 90 min) → behavioral → practical live coding → product decomposition (+ maybe CTO).
 - Strong fit: they favor founder/entrepreneur builders + end-to-end product experience (Rich = ForgeKit founder, plus this newly-remembered ElevenLabs history itself). Practical, remote, flexible.
-- Honesty: audio synthesis isn't Rich's domain — frame as genuine AI/product curiosity, not faked expertise. The Santa Chat/Textation history strengthens this further — it's not curiosity, it's a track record.
+- Honesty: audio synthesis isn't Rich's domain — frame as genuine AI/product curiosity, not faked expertise. The Santa Chat/Textation history strengthens this further — it's not curiosity, it's a track record. If asked directly how deep the voice-AI knowledge goes, use the master gap answer in `you/interview-cheat-sheet.md` ("I learn as I go — it's literally how I've kept running at a startup").

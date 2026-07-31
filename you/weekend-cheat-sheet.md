@@ -37,4 +37,5 @@ No Unity/Unreal/game-engine background, no prior AWS GameLift experience, no shi
 - **Confirm location/remote status** — SF-based company, verify before going deep, same as Mochi.
 - **Don't fake game-industry fluency** — you don't need to; own the gap plainly.
 - **Don't over-lean on the voice-AI narrative either** — Santa Chat/Textation was a few weeks of side-project work three years ago, not a specialization. It's honest supporting color for genuine interest in the space; your actual qualification for a "Senior Software Engineer" title is the 15 years of production React/architecture/design-systems depth. Lead with that.
+- If pressed directly on how deep the voice-AI/game-dev knowledge really goes, use the master gap answer in `you/interview-cheat-sheet.md` ("I learn as I go — it's literally how I've kept running at a startup") rather than improvising a new excuse.
 - Couldn't pull the full JD (fetch blocked) — confirm exact responsibilities/must-haves live and adjust.
