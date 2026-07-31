@@ -14,6 +14,7 @@
 | — | Wrapbook — role TBD | nda-received | review NDA terms before signing; production payroll/fintech platform |
 | — | Wing Assistant | closed-no (likely mismatch) | VA/BPO staffing platform, not aligned to Principal FE search — confirm skip |
 | Teo | Nivoda — Sr. Fullstack Engineer, Growth | shortlisted | schedule 30-min first-stage call via Ashby link; B2B diamond/gemstone marketplace, $51M raised |
+| Steffan Aguilar (recruiter) | Weekend — Sr. SWE, Studios | shortlisted | schedule 30-min Zoom via Ashby link; voice-AI games for smart TVs (Jeopardy!, Song Quiz) — strong thematic fit w/ Perch/Santa Chat/Textation; confirm remote vs. SF in-person |
 
 ## Status vocab
 researching · drafted · in-gmail · sent · replied · follow-up-due · interview-scheduled · nda-received · closed-won · closed-no · closed-ghost
