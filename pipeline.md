@@ -13,8 +13,8 @@
 | — | RainFocus — junior role (mixup, not Sr. UI Developer as researched) | interviewed | done as of yesterday; cheat sheet was built for the wrong level (Sr/architect scope) — disregard, no action needed |
 | — | Wrapbook — role TBD | nda-received | review NDA terms before signing; production payroll/fintech platform |
 | — | Wing Assistant | closed-no (likely mismatch) | VA/BPO staffing platform, not aligned to Principal FE search — confirm skip |
-| Teo | Nivoda — Sr. Fullstack Engineer, Growth | shortlisted | schedule 30-min first-stage call via Ashby link; B2B diamond/gemstone marketplace, $51M raised |
-| Steffan Aguilar (recruiter) | Weekend — Sr. SWE, Studios | shortlisted | schedule 30-min Zoom via Ashby link; voice-AI games for smart TVs (Jeopardy!, Song Quiz) — strong thematic fit w/ Perch/Santa Chat/Textation; confirm remote vs. SF in-person |
+| Teo | Nivoda — Sr. Fullstack Engineer, Growth | cheat sheet ready | schedule 30-min first-stage call via Ashby link; you/nivoda-cheat-sheet.md — lead with FaceCake $400K/mo + ForgeKit AI-tooling, own the no-formal-A/B-testing gap |
+| Steffan Aguilar (recruiter) | Weekend — Sr. SWE, Studios | cheat sheet ready | schedule 30-min Zoom via Ashby link; you/weekend-cheat-sheet.md — strongest thematic fit in the pipeline (Kinect kiosk → NARS CV → Santa Chat/Textation → Perch); confirm remote vs. SF in-person |
 
 ## Status vocab
 researching · drafted · in-gmail · sent · replied · follow-up-due · interview-scheduled · nda-received · closed-won · closed-no · closed-ghost
