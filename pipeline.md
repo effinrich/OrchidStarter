@@ -7,7 +7,7 @@
 | Staff SWE, People Products | Anthropic | materials ready | apply (why-Anthropic answer done) |
 | Fullstack (FE), AV Mapping | GM | resume + referral note ready | send resume to PHC referrer |
 | Sr. Staff Frontend | Hims & Hers | resume + cover + cheat sheet ready | apply |
-| Oskar Nordin Ryan (recruiter) | ElevenLabs — FE (React/TS) | assessment invited | connect on LinkedIn + take 90-min CoderPad screen (real link confirmed) |
+| Oskar Nordin Ryan (recruiter) | ElevenLabs — FE (React/TS) | replied — forwarded to engineering | Oskar excited about Santa Chat AI/Textation history, forwarded write-ups internally; take the 90-min CoderPad screen (stakes are higher now, eng is primed) |
 | — | Mochi Health — Sr/Staff Frontend Engineer | follow-up-due | recruiter no-showed Tue 7pm, no word since — give it a few days then send a short "still interested, is this still on?" nudge; cheat sheet still valid in you/mochi-cheat-sheet.md |
 | — | Lemon.io — vetted dev network (not a single employer) | follow-up-due | interviewer said 10am was too early for him, needs reschedule — wait for them to propose a new time; cheat sheet still valid in you/lemon-io-cheat-sheet.md |
 | — | RainFocus — junior role (mixup, not Sr. UI Developer as researched) | interviewed | done as of yesterday; cheat sheet was built for the wrong level (Sr/architect scope) — disregard, no action needed |

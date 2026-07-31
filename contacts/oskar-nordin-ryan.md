@@ -1,7 +1,7 @@
 # Oskar Nordin Ryan — ElevenLabs (Recruiter / Talent)
 - **LinkedIn:** linkedin.com/in/oskarnordinryan/
 - **Role:** ElevenLabs recruiter — sent the React/TS CoderPad assessment invite (signed "Oskar")
-- **Status:** `link-resolved` — Oskar proactively followed up and sent a fresh CoderPad link after Rich missed the original cutoff (overwhelmed with other pipeline items). **No "please resend" email needed — that ask is moot, delete/ignore the draft below.**
+- **Status:** `engineering-forwarded` — Oskar responded excitedly to the Santa Chat AI/Textation history and forwarded the write-ups to ElevenLabs engineering. Real internal momentum now — the CoderPad screen matters more than ever since eng is already primed to look favorably. (Link situation from before is resolved — Oskar sent a fresh one unprompted.)
 - **Why the LinkedIn note still matters:** goodwill + surfacing genuine pre-existing history with the company (see below) — a recruiter who knows that history nudges your file forward in an otherwise-automated pipeline.
 
 ## ⭐ History with ElevenLabs — the actual headline story
