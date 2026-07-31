@@ -1,13 +1,31 @@
-# ElevenLabs FE Practice — React/TypeScript (CoderPad-style)
+# ElevenLabs Interview Practice
 
-Practice for ElevenLabs' **async coding screen: React/TypeScript in CoderPad, 90 min,
-self-paced.** It's practical (not "expert-level"): typically **fix React bugs**,
-**finish a component**, and **one small pure-TS logic problem**. This pad gives you
-all three.
+**CORRECTED (confirmed by web research, verify live yourself too):** the actual async
+**CoderPad screen (90 min, the one you have a real link for) is data-structures/algorithms,
+NOT React.** Multiple independent sources describe it as: 2 medium + 1 medium-hard problem,
+practical rather than puzzle-flavored — hash maps, stacks, two pointers, well-chosen sorts.
+Named examples: **interval merging, an LRU cache, parsing/transforming a stream of log lines,
+a small rate limiter, string manipulation with a hidden edge case.**
+
+The React-component work (fixing/extending a real component, e.g. a reported scenario about
+an audio-transcription tool where text highlighting falls out of sync with playback) is a
+**separate, later stage** — the live "practical coding" round — not this async screen.
+
+**Practice priority right now: `dsa/` first.** Keep the React tasks below too — they're real
+prep, just for a later round, not this one.
 
 ## Run it
 
-**React tasks** (Tasks 1 & 2):
+**DS&A tasks** (`dsa/`) — no install needed, this is your priority:
+```bash
+cd dsa
+node mergeIntervals.test.mjs                                    # tests mergeIntervals.mjs
+SOLUTION=./mergeIntervals.solved.mjs node mergeIntervals.test.mjs   # reference
+node lruCache.test.mjs
+node rateLimiter.test.mjs
+```
+
+**React tasks** (Tasks 1 & 2 below) — for the LATER live coding round, not this screen:
 ```bash
 npm install
 npm run dev
@@ -20,7 +38,19 @@ node logic/tests.mjs                                    # tests your logic/usage
 SOLUTION=./usage.solved.mjs node logic/tests.mjs        # (run from logic/) the reference
 ```
 
-## Tasks
+## DS&A tasks (`dsa/`) — practice these for the real upcoming screen
+
+**Merge Intervals** (`dsa/mergeIntervals.mjs`) — medium. Sort + merge, touching intervals count as overlapping.
+
+**LRU Cache** (`dsa/lruCache.mjs`) — medium-hard. O(1) get/put with eviction; `Map` insertion order is the trick.
+
+**Rate Limiter** (`dsa/rateLimiter.mjs`) — medium. Sliding-window `allow(timestamp)`; watch the boundary condition.
+
+Not built yet but worth a mental run-through: **log-line parsing/transform** (parse a stream
+of structured log lines, aggregate/filter) and **string manipulation with a hidden edge case**
+(off-by-one, unicode, whitespace, empty input) — both were named as real problem shapes.
+
+## React tasks (for the later live round, not the CoderPad screen)
 
 **Task 1 — fix the bugs** (`src/VoiceSearch.tsx`)
 - The search `<input>` is uncontrolled — typing does nothing. Make it controlled.
@@ -36,7 +66,7 @@ SOLUTION=./usage.solved.mjs node logic/tests.mjs        # (run from logic/) the 
   `[{ voiceId, total }]` sorted by `total` desc, then `voiceId` asc. Classic group-by.
 
 ## Also reuse
-Your **`ramp-fe-practice`** app (transaction table, 3 bugs) is excellent extra reps
-for the "fix React bugs" half of this screen — run through it too.
+Your **`ramp-fe-practice`** app (transaction table, 3 bugs) is good extra reps for the
+React-debugging round later — not urgent for the upcoming DS&A screen.
 
 See `STRATEGY.md` for how ElevenLabs scores and how to spend the 90 minutes.
