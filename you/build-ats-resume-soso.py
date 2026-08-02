@@ -5,23 +5,26 @@ hybrid digital-physical / creative-technology installations). Edit data below, t
 Outputs /tmp/pdfout/Rich_Tillman_Resume_SOSO.docx and you/resume-soso.html.
 Does NOT touch the canonical you/resume-ats.html / build-ats-resume.py.
 ATS rules: single column, black, Arial, dates on own line, no tables/color. (see CLAUDE.md)
-Honesty note: Rich has no Vue, Three.js, Pixi, WebGL, or RS485/industrial-lighting/low-level
-networking experience (all explicitly required/bonus for this role). This summary does not
-claim any of them - it leads with real, transferable strengths (full-stack architecture,
-real-time systems, AI/LLM integration, one physical/embedded installation precedent) instead.
+Honesty note: Rich has real production Pixi.js/WebGL/Three.js experience (AR face-tracking +
+makeup rendering at FaceCake/NARS - confirmed directly by Rich, not previously on the resume).
+He has NO Vue experience (15 years is React) and no RS485/industrial-lighting/low-level
+networking (bonus, not required). Only the Vue gap remains unaddressed by real experience;
+everything else claimed here is real and on the resume.
 """
 import zipfile, html, os
 def esc(t): return html.escape(t, quote=False)
 
 NAME="RICH TILLMAN"; TITLE="Principal Frontend Engineer"
 CONTACT="Elizabethton, TN | 843-834-0041 | richtillman@pm.me | linkedin.com/in/effinrich | github.com/effinrich | richtillman.xyz"
-SUMMARY=("Principal Frontend Engineer with 15 years building production UI systems and full-stack architecture: React/TypeScript "
- "component systems, Node.js backend services, and real-time, AI-integrated products end-to-end (LLM orchestration, live voice "
- "and image generation, WebSocket sessions). Also shipped an embedded, sensor-driven physical installation (Kinect motion "
- "tracking on a retail kiosk) years before mainstream WebAR. Creator of ForgeKit, an open-source CLI + MCP server suite "
- "(5,700+ npm installs). IC to Engineering Director across five 0-to-1 startups, plus recent contract/freelance engagements. "
- "Core frontend depth is React, not Vue; ramps fast on new stacks by design, not exception. Seeking Principal / Senior "
- "Frontend, full-stack, and creative-technology roles.")
+SUMMARY=("Principal Frontend Engineer with 15 years building production UI systems, including real-time WebGL/Pixi.js/Three.js "
+ "graphics work: pioneered browser-based AR face-tracking and makeup rendering for NARS, one of the first production use cases "
+ "of its kind, working directly with Pixi.js's creator on techniques no one had attempted before. Also full-stack "
+ "architecture (React/TypeScript, Node.js backend services) and real-time, AI-integrated products end-to-end (LLM "
+ "orchestration, live voice and image generation, WebSocket sessions), plus a sensor-driven embedded physical installation "
+ "(Kinect motion tracking on a retail kiosk). Creator of ForgeKit, an open-source CLI + MCP server suite (5,700+ npm installs). "
+ "IC to Engineering Director across five 0-to-1 startups, plus recent contract/freelance engagements. Core frontend depth is "
+ "React, not Vue; ramps fast on new stacks by design, not exception. Seeking Principal / Senior Frontend, full-stack, and "
+ "creative-technology roles.")
 JOBS=[
  ("Frontend Engineer, AI Evaluation & Red-Teaming (Contract)","Handshake","Jun 2026 - Jul 2026",None,[
    "Assessed real-world code quality and red-teamed AI models on frontend/React engineering tasks, authoring adversarial cases to break model outputs and surface failure modes."]),
@@ -43,7 +46,7 @@ JOBS=[
    "Built one of the earliest production React UI libraries on Storybook: a 200-component design system spanning B2B, B2C, and React Native, eliminating the need for separate iOS and Android teams.",
    "Served as design-engineering liaison across client, sales, and marketing; shipped B2B/B2C and internal dashboards (React, NestJS, D3.js) and a React Native app with real-time data views."]),
  ("Lead Web Developer","FaceCake Marketing Technologies","Oct 2010 - Sep 2016","Los Angeles, CA",[
-   "Pioneered browser-based AR try-on for NARS: compiled OpenCV to JavaScript via Emscripten for real-time client-side computer vision over getUserMedia, years before mainstream WebAR.",
+   "Pioneered browser-based AR try-on for NARS, one of the first of its kind: compiled OpenCV to JavaScript via Emscripten for real-time client-side computer vision over getUserMedia, with Pixi.js, WebGL, and Three.js powering real-time face-tracking and makeup-rendering. Worked directly with Pixi.js's creator on techniques no one had attempted before, years ahead of mainstream WebAR.",
    "Shipped the NARS virtual try-on web app (~$400K/month revenue lift) backed by a real-time CMS on Firebase Realtime Database; owned the full lifecycle end-to-end."]),
 ]
 PROJECTS=[
@@ -73,7 +76,8 @@ PROJECTS=[
 SKILLS=[
  ("Languages","JavaScript (15 yrs), TypeScript (strict), HTML5, CSS3, SQL, PHP (legacy)"),
  ("Frameworks & Libraries","React 19, Next.js, React Native, Expo, TanStack Start, Node.js / NestJS, React Hooks, Concurrent Rendering"),
- ("Real-Time & AI Integration","WebSockets, live audio/voice pipelines (ElevenLabs, Deepgram), LLM orchestration, image & video generation (Stable Diffusion, SadTalker), AI content evaluation & red-teaming, real-time client-side computer vision (Emscripten/OpenCV)"),
+ ("Graphics & Real-Time Rendering","Pixi.js, WebGL, Three.js, Emscripten (C++ to JS/WASM), OpenCV, real-time client-side computer vision and AR face-tracking"),
+ ("Real-Time & AI Integration","WebSockets, live audio/voice pipelines (ElevenLabs, Deepgram), LLM orchestration, image & video generation (Stable Diffusion, SadTalker), AI content evaluation & red-teaming"),
  ("Design Systems & Tools","Storybook 10+, Chromatic, Chakra UI, shadcn/ui, Tamagui, Ark UI, Radix UI, Styled Components / CSS-in-JS, Figma Code Connect"),
  ("AI & Tooling","Model Context Protocol (MCP), Claude Code, Cursor, Figma MCP, AI model evaluation & red-teaming"),
  ("DevOps & Monorepo","Nx, Turborepo, pnpm workspaces, Module Federation, GitHub Actions, EAS Build, GCP, Kubernetes, gRPC"),
