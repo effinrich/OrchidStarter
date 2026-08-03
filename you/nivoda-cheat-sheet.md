@@ -1,5 +1,8 @@
 # Nivoda — Sr. Fullstack Engineer, Growth — Interview Cheat Sheet
-B2B diamond/gemstone marketplace (2.5M+ stones, financing, global fulfillment) · $51M raised, growth "skyrocketed" past 12 months · TypeScript/Node.js + React · **First-stage call: 30 min, schedule via Ashby link**
+B2B diamond/gemstone marketplace (2.5M+ stones, financing, global fulfillment) · $51M raised, growth "skyrocketed" past 12 months · TypeScript/Node.js + React · **First-stage call: DONE, went very well — see confirmed real bar below**
+
+## Confirmed from the actual 1st-round call (head of product)
+The real bar isn't fully captured in the JD: she's actually looking for a **Staff-level engineer with a strong product and design sensibility** — not just growth-eng mechanics (A/B tests, funnels). Leaning into design-systems/product-craft depth (not just shipping-fast growth features) was a **visible green flag** for her about fitting a newer/earlier-stage company culture. For later rounds: lead harder with design-system ownership (Redesign Health, Freebird 200-component library) and product judgment, not just the growth/A-B framing below — that framing undersold the actual fit.
 
 ## What the role actually is
 Own growth features end-to-end across the stack (TS/Node backend, React frontend) to drive acquisition, conversion, retention, and monetization: design architecture, run A/B experiments, instrument metrics, iterate fast with PM/design, use AI-assisted tools in the engineering workflow, mentor juniors. This is a "ship fast, measure, iterate" fullstack role wrapped around growth outcomes — not a narrow specialist track.

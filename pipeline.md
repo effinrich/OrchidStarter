@@ -13,7 +13,7 @@
 | — | RainFocus — junior role (mixup, not Sr. UI Developer as researched) | interviewed | done as of yesterday; cheat sheet was built for the wrong level (Sr/architect scope) — disregard, no action needed |
 | — | Wrapbook — role TBD | nda-received | review NDA terms before signing; production payroll/fintech platform |
 | — | Wing Assistant | closed-no (likely mismatch) | VA/BPO staffing platform, not aligned to Principal FE search — confirm skip |
-| Teo | Nivoda — Sr. Fullstack Engineer, Growth | cheat sheet ready | schedule 30-min first-stage call via Ashby link; you/nivoda-cheat-sheet.md — lead with FaceCake $400K/mo + ForgeKit AI-tooling, own the no-formal-A/B-testing gap |
+| Head of Product | Nivoda — Sr. Fullstack Engineer, Growth | interviewed — strong fit | 1st-stage call went very well; real (unstated-in-JD) bar is Staff-level + strong product/design sensibility, not just growth-eng mechanics — leaning into that was a visible green flag for her; awaiting next-round scheduling |
 | Steffan Aguilar (recruiter) | Weekend — Sr. SWE, Studios | cheat sheet ready | schedule 30-min Zoom via Ashby link; you/weekend-cheat-sheet.md — lead with Redesign Health/Pineapple depth, voice-AI history is real but secondary color; confirm remote vs. SF in-person |
 
 ## Status vocab
