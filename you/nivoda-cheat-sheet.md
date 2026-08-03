@@ -24,11 +24,18 @@ You haven't run structured A/B tests with a dedicated platform (Optimizely, Laun
 - "Why Nivoda?" → fast-scaling B2B marketplace, international expansion, real growth mandate — say you're drawn to marketplace-shaped problems (Freebird) at a company actually scaling right now, not a maintenance-mode one.
 - "Marketplace / two-sided dynamics?" → Freebird (riders/drivers) is your closest direct analog — name it.
 
+## Recent news / insider signals (use these to sound current, not generic)
+- **Funding trajectory:** $11M Series A (Headline) → $51M Series C Nov 2024 (led by Northzone, whose portfolio includes Spotify/Klarna/Kahoot!) → **$60M trade-credit financing facility** (from i80 Group, announced ~Sep 2025) so jewelers get 30/60/90-day flexible payment terms. Total raised is now $96M+ across rounds. The company is explicitly "London- and New York-headquartered," 10,000+ retailers, 70+ countries.
+- **CEO David Sutton's own words:** "We're on a mission to create a one-stop shop for jewelers" — that one-stop-shop framing is his language, use it back to them.
+- **Platform is expanding beyond diamonds** — into gemstones, melee, and manufactured jewelry, plus subscription software to help retailers merchandise/sell to consumers (not just source inventory). This is relevant to a Growth-titled role: growth now spans a wider surface than just diamond search/checkout.
+- **Sutton was at JCK Las Vegas 2026** (major jewelry industry trade show) giving a masterclass titled "Building an Eight-Figure Business" — he's positioning Nivoda as the industry's tech-forward disruptor to jewelers directly, not just to investors.
+- **Possible AI/dev-tooling signal (unconfirmed, worth checking yourself):** secondary sources suggest Sutton posted about running multiple Claude Code agents in a jewelry-industry context around JCK 2026. Couldn't verify the exact post directly — check his LinkedIn (linkedin.com/in/david-sutton-0222a59) before the call. If real, this is a direct, specific hook: you'd be talking to a CEO who's personally hands-on with the same AI coding tooling you build for a living (ForgeKit, MCP).
+
 ## Questions to ask them
-- "What does the growth roadmap actually look like right now — acquisition, conversion, retention, or a mix?"
+- "You've expanded from diamonds into gemstones, melee, and manufactured jewelry, plus subscription merchandising tools — does 'growth' on this team mean deepening those newer surfaces, or still mostly the core diamond marketplace?"
+- "The trade-credit financing (30/60/90-day terms) removes a real purchasing barrier — is growth engineering involved in that funnel, or is that more fintech/ops?"
 - "What experimentation/metrics stack do you use today?"
 - "How closely does engineering work with PM/design day-to-day — same team, or a request queue?"
-- "What's driven the growth over the last 12 months, and where's the team betting next?"
 
 ## Landmines / notes
 - **This is a 30-min first-stage screen** — keep answers tight, lead with the headline (metric/result) before the mechanism.

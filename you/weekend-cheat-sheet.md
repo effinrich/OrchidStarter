@@ -1,5 +1,5 @@
 # Weekend — Sr. Software Engineer, Studios — Interview Cheat Sheet
-Voice-AI games for smart TVs (Jeopardy!, Song Quiz, CoComelon, Wheel of Fortune; millions of monthly users) · Building a Netflix/Spotify-style bundle for AI-powered games · Founded 2024, SF (Union Square) · TypeScript/React/AWS GameLift Streams · **First call: 30 min Zoom w/ Steffan, schedule via Ashby link**
+Voice-AI games for smart TVs (Jeopardy!, Song Quiz, CoComelon, Wheel of Fortune, Wit's End; 5M+ monthly players) · **Formerly Volley — rebranded to Weekend in 2026, know this cold, don't call it "Volley" or act surprised by the name change** · $55M Series C (Jul 2024, co-led by Lightspeed + Microsoft's M12), Lightspeed has backed every round since Series A 2020 · Billed by Lightspeed as "the highest-grossing AI-powered games company" · SF (Union Square) · TypeScript/React/AWS GameLift Streams · **First call: 30 min Zoom w/ Steffan, schedule via Ashby link**
 
 ## What the role actually is
 Embedded on the Studios team, likely attached to a specific game (Jeopardy or Song Quiz) — full game-development lifecycle, prototyping new features through shipping production-quality experiences. Stack: TypeScript, React, AWS GameLift Streams (couldn't confirm full JD, posting wasn't fetchable — verify specifics live).
@@ -27,10 +27,18 @@ No Unity/Unreal/game-engine background, no prior AWS GameLift experience, no shi
 - "TypeScript/React depth?" → 15 years, no hedging needed — this is a straightforward strong match regardless of how the voice-AI angle lands.
 - "Working embedded on a single product team (Jeopardy or Song Quiz)?" → tie to Redesign Health/PHC-style cross-functional ownership, not the side projects.
 
+## Recent news / insider signals (use these to sound current, not generic)
+- **The rebrand is very recent (2026)** — Volley → Weekend. Say "Weekend" throughout; if you reference the older funding history, frame it as "when you were Volley" naturally, don't stumble on it.
+- **Wit's End — their newest game, an AI Dungeon RPG**, notably covered by OpenAI's own devs: it uses structured function calls (via the Realtime API) to keep an AI dungeon master both creative AND tightly rule-compliant in real time — described as reducing validation errors/hallucinations vs. earlier approaches. This is a genuinely interesting LLM-orchestration engineering problem (creative freedom vs. hard constraints), directly relevant to your own LLM-pipeline work on Santa Chat/Textation — a good, specific thing to ask about or reference.
+- **Fire TV launch, Jeopardy! as debut title** — Weekend describes itself as the first gaming company to build a voice-controlled game natively for Fire TV. Platform expansion (Roku, Fire TV, Samsung, LG) is an active, ongoing push, not old news.
+- **Co-founder Max Child has a distinctive, contrarian public position** worth knowing before the call: he argues the voice-AI industry "went wrong" by coupling voice control with "imaginary humans" (Siri/Alexa-style assistant personas) — that over-promising a general-purpose AI companion "held back" the category by setting expectations voice tech couldn't meet. His view: speech recognition for bounded, specific tasks works great; a fake anthropomorphized assistant persona doesn't. (Source: TheWrap's "Tech vs Media" podcast.)
+  - **Worth being self-aware about:** your own Santa Chat AI/Textation work leaned exactly into the "AI companion/persona" model Max is skeptical of. Don't hide from this — if it comes up, it's a genuinely interesting thing to discuss with real nuance (what worked/didn't about the companion framing) rather than something to paper over.
+- **Max Child + co-founder James Wilsterman personally co-host the Cerebral Valley Voice Summit** (with Eric Newcomer) — an invite-only voice-AI event in SF (most recently May 2026, "voice-pilled" was the event's running joke/hat slogan). They're positioning themselves as category thought leaders in voice-as-interface broadly, not just games. Knowing this event/community exists is a good signal you're plugged into the same world.
+
 ## Questions to ask them
+- "Wit's End's function-calling approach to keeping the AI dungeon master rule-compliant is a real orchestration problem — how much of the Studios role touches that kind of LLM-pipeline work vs. more traditional game feature work?"
 - "Which game would I actually be embedded on, and what does the Studios/Platform team split look like day-to-day?"
 - "How much of the role is genuinely new tech (game engines, GameLift) vs. TypeScript/React work I'd recognize?"
-- "What does 'voice AI game' mean technically here — is ElevenLabs or a similar provider in the stack, or is voice input/output built differently?"
 - "Is this role remote, hybrid, or SF in-person?" (same check you're running on every SF-based role right now)
 
 ## Landmines / notes
