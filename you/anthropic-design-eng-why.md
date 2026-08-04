@@ -1,0 +1,12 @@
+# Why Anthropic? — Design Engineer, Web (Creative Studio / Brand Web) — application answer
+Target: 200-400 words. Status: working draft, refined from Rich's own dictated first pass per Anthropic's candidate AI guidance (draft yourself, Claude refines).
+
+I want to help integrate AI more deeply into frontend architecture and engineering, and into how frontend work marries with product and design — and I've been doing exactly that, in some form, for years before it had anything to do with Anthropic specifically. Storybook-driven component libraries, design systems that survive contact with a growing team, the collaborative loop between design/product/engineering, React component architecture, UI libraries built to last — that's been my actual specialty for over a decade, across five different companies and now my own venture.
+
+What's changed is that this work has gotten dramatically more valuable and more feasible. Things that used to take a dedicated design-systems team months — turning a Figma file into a typed, documented, production-ready component — I can now do with AI in the loop, and I've built the tooling to prove it: ForgeKit, an open-source CLI and MCP server suite that bridges Figma to React to Storybook, with 5,700+ npm installs from real teams using it. I author MCP servers — the protocol you created — as part of my actual daily practice, not as a novelty.
+
+That's why this role matters to me specifically: I've been circling the intersection of design systems, frontend architecture, and AI tooling for years, mostly alone, mostly ahead of when the tools made it easy. Now that intersection is suddenly where a lot of the most interesting work in the industry is happening, and I want to be part of defining it — not adjacent to it, in it. Anthropic's Creative Studio, building brand and product work with craft and AI together, is close to the clearest expression of that intersection I've seen in a job posting.
+
+## Notes
+- Rich's original point (kept intact through the polish): he's been in the Storybook/design-systems/React-components/UI-libraries/design-product-collaboration space for years, it's become far more valuable and feasible with AI, and being recognized as part of that community/movement matters to him.
+- Distinct from `you/anthropic-why.md`, which was written for the earlier Staff SWE, People Products role — different mission framing, don't mix them up.
