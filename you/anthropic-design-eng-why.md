@@ -9,6 +9,10 @@ What Anthropic represents to me is the next force multiplier in that same line, 
 
 That's the actual pull: I want to be genuinely involved in pushing that shift forward, at the company positioned to champion it in a real way — not just using the tools Anthropic ships, but helping build what comes next.
 
+## Additional true material (not yet integrated — essay is already near the 400-word ceiling)
+For the last five years, Rich's work has been dedicated to the collaborative workflow bringing design, engineering, and automation-via-code together. Before he ever saw the term used elsewhere, he'd independently concluded that engineering and design had to be closely tied to make products succeed, and privately called what he was doing "product engineer" or "design system engineer" — his own coined label, arrived at without outside influence. Seeing that same idea show up on other people's resumes and job descriptions recently (including, presumably, this one) felt surreal to him — not validation he was looking for, just a strange, real moment of "that's the thing I already named for myself."
+This is a stronger, more specific version of the same underlying point already in the essay (independently arriving at an insight before the industry caught up) — same shape as the Weekend/Max-Child story elsewhere in this pipeline. Could replace or tighten the existing "hard sell for years" paragraph if Rich wants this angle instead, rather than stacking both.
+
 ## Notes
 - v3 (343 words): added the "hard sell for years, then it wasn't" arc — Rich spent years making the case for design systems / UI-UX craft / design-code-as-one-discipline against real resistance, and in roughly the last 1-2 years that argument stopped needing to be made.
 - The term Rich was reaching for and couldn't name is very likely **"Design Engineering"** itself — the discipline/title (Vercel, Linear, Stripe, now Anthropic) really only crystallized as a recognized category in the last year or two, matching his timeline almost exactly. Used explicitly in the draft as a callback to the actual job title — confirm with Rich this is really what he meant before sending.
