@@ -16,16 +16,22 @@ This session's GitHub access is locked to `effinrich/OrchidStarter` only. Repo s
 - `stainless-forgekit-typescript-poc` (private)
 - `documentationai-Docs` (public) — "AI-generated documentation for ForgeKit," possibly generated output not source
 
-## Known gaps NOT in any repo above (per Rich, from memory — need to locate)
-- **Bidirectional Figma ⇄ React plugin.** An actual Figma plugin (HTML-based UI, per Figma's plugin architecture) that syncs React → Figma AND Figma → React. Never made it into any of the repos found via search — may be local/uncommitted, may be under a differently-named repo not turned up by "forgekit" search, or may only exist as local files. Locate before consolidation, since this sounds like a genuinely strong, distinctive piece of work (and directly relevant to the Anthropic Design Engineer pitch — Claude Design does Figma-adjacent design-system generation).
+## Found via local `mdfind`/`grep` on Rich's Mac (2026-08-06) — the missing Figma plugin(s)
+Located via Spotlight search for `figma.showUI` under `~/Documents`. Real hits (excluding node_modules and downloaded Figma MCP reference docs, which are not Rich's code):
+- **`~/Documents/GitHub/forgekit-v2/packages/figma-plugin/`** — has a `packages/` monorepo layout already. **NOT found on GitHub** — local-only, no remote backup. Likely candidate for "the bidirectional Figma plugin," and possibly a more-evolved, partially-already-monorepo'd ForgeKit attempt that predates/parallels the scattered repos below.
+- **`~/Documents/GitHub/designready-ai/plugin/` + `/dist/code.js`** — **NOT on GitHub**, local-only. Possibly an earlier name/prototype for the same idea.
+- **`~/Documents/GitHub/silships-figma-cli/plugin/`** — **NOT on GitHub**, local-only. Another candidate for "too similar" overlap.
+- **`~/Documents/GitHub/tidy-app/figma-plugin/`** — this one's parent repo (`tidy-app`) IS on GitHub (private), along with two variants: `tidy-app-ds` ("Design system for Tidy App") and `tidy-app-v2` — a second, separate "too similar" cluster worth diffing later, tangential to ForgeKit itself.
 
-## Plan (once repo access is granted)
-1. Read every repo listed above — map what each actually contains, current state, whether it's live/stale/experimental.
-2. Identify overlapping/duplicate repos (Rich's instinct: "some too similar") and pick the canonical version of each.
-3. Locate the missing Figma plugin (ask Rich where it lives if not findable via search/local disk).
+**Immediate priority, ahead of any consolidation work: get `forgekit-v2`, `designready-ai`, and `silships-figma-cli` pushed to GitHub.** They currently exist only on Rich's laptop with no remote backup — given this whole effort's history of losing local/uncommitted work to resets, this is real risk, not hypothetical. Waiting on Rich to push these before they can be added to this session.
+
+## Plan
+1. **First: back up `forgekit-v2`, `designready-ai`, `silships-figma-cli` to GitHub (private is fine).** Nothing else below should block on this, but it's the highest-priority single action.
+2. Read every repo (the original 9 + these 3, once pushed) — map what each actually contains, current state, live/stale/experimental.
+3. Identify overlapping/duplicate repos (Rich's instinct: "some too similar" — confirmed real, at least 3 separate Figma-plugin attempts exist) and pick the canonical version of each.
 4. Decide what's in-scope for the monorepo vs. archived.
 5. Scope publish continuity for anything already live on npm — can't break existing installs.
 6. Build the Nx monorepo structure, migrate canonical code in, verify builds/tests/publishing before archiving the old repos.
 
 ## Status
-Waiting on repo access. Rich is away from his machine as of this note.
+Waiting on: (1) `forgekit-v2`/`designready-ai`/`silships-figma-cli` pushed to GitHub, (2) all relevant repos added to this session's GitHub access.
