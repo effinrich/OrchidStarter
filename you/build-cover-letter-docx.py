@@ -14,6 +14,11 @@ def main(src_path):
     lines = text.split("\n")
     if lines and lines[0].startswith("# "):
         lines = lines[1:]
+    # drop a following "(meta note)" line, e.g. "(Send as-is. No tailoring required.)"
+    while lines and lines[0].strip() == "":
+        lines = lines[1:]
+    if lines and lines[0].strip().startswith("(") and lines[0].strip().endswith(")"):
+        lines = lines[1:]
     body = "\n".join(lines).strip()
     paragraphs = [p.strip() for p in re.split(r"\n\s*\n", body) if p.strip()]
 
