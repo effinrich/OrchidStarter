@@ -28,10 +28,8 @@ SUMMARY=("Principal Frontend Engineer (5+ yrs at Staff/Senior altitude, 15 years
  "AI-integrated consumer products end-to-end (LLM orchestration, real-time personalization). AI-native by default: Claude "
  "Code and Cursor are how I actually build, not an add-on. Honest gap: my production Next.js is Pages Router (Next.js 12), "
  "not App Router specifically - closest precedent is React Router's framework-mode SSR/loaders/actions on a recent project; "
- "I'd ramp on App Router fast."
- # TODO(Rich): add one honest, specific clause here about real fitness/nutrition dedication once
- # you give me real details (how long training, what kind, nutrition approach) - do NOT invent this.
- )
+ "I'd ramp on App Router fast. Also live what Future teaches: training four days a week since 34, cooking a paleo/keto-hybrid "
+ "diet from scratch - genuinely invested in sustained health behavior change, not just the product problem behind it.")
 JOBS=[
  ("Frontend Engineer, AI Evaluation & Red-Teaming (Contract)","Handshake","Jun 2026 - Jul 2026",None,[
    "Assessed real-world code quality and red-teamed AI models on frontend/React engineering tasks, authoring adversarial cases to break model outputs and surface failure modes."]),
