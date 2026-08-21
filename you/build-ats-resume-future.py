@@ -25,7 +25,8 @@ SUMMARY=("Principal Frontend Engineer (5+ yrs at Staff/Senior altitude, 15 years
  "TypeScript, and the design-to-code craft that makes member-facing products feel alive: creator of ForgeKit, an open-source "
  "CLI + MCP suite bridging Figma to React (5,700+ npm installs) - I work from a Figma file daily and know when something is "
  "off. Shipped production React Native at 100K+ users (25% mobile performance gain), 200+ component design systems, and "
- "AI-integrated consumer products end-to-end (LLM orchestration, real-time personalization). AI-native by default: Claude "
+ "AI-integrated consumer products end-to-end (LLM orchestration, real-time personalization). IC to Engineering Director "
+ "across five 0-to-1 startups, making the real polish-vs-velocity tradeoffs that come with it. AI-native by default: Claude "
  "Code and Cursor are how I actually build, not an add-on. Honest gap: my production Next.js is Pages Router (Next.js 12), "
  "not App Router specifically - closest precedent is React Router's framework-mode SSR/loaders/actions on a recent project; "
  "I'd ramp on App Router fast. Also live what Future teaches: training four days a week since 34, cooking a paleo/keto-hybrid "
@@ -70,7 +71,7 @@ PROJECTS=[
  ("Perch - open-source voice-assistant widget",
   "Drop-in voice AI for any website (one script tag + React SDK) built on ElevenLabs Conversational AI: dependency-free Shadow-DOM core, React SDK, and a serverless signed-URL proxy (BFF pattern - frontend talking to its own backend layer) that keeps the API key server-side."),
  ("Santa Chat AI - AI-powered Santa Claus experience",
-  "Real-time chat, live phone calls, and SMS with Santa via ElevenLabs text-to-speech and Twilio, an LLM chat backend, and Stable Diffusion image generation; Stripe-based subscription tokens. Next.js frontend/BFF layer proxying to a dedicated backend service. Selected by ElevenLabs for a 300K-token grant. Next.js, React, Chakra UI, Zustand, MongoDB, NextAuth."),
+  "Real-time chat, live phone calls, and SMS with Santa via ElevenLabs text-to-speech and Twilio, an LLM chat backend, and Stable Diffusion image generation; Stripe-based subscription tokens. Per-user personalization (parents added their child's name so Santa could address them by name) and analytics instrumentation (Amplitude, Google Analytics 4) tracked engagement in production. Next.js frontend/BFF layer proxying to a dedicated backend service. Selected by ElevenLabs for a 300K-token grant. Next.js, React, Chakra UI, Zustand, MongoDB, NextAuth."),
  ("Textation - AI character chat and avatar platform",
   "Pivoted from Santa Chat AI into a general AI-companion product: custom AI characters with LLM chat, ElevenLabs text-to-speech, Deepgram speech-to-text, image generation, SadTalker talking-head video, and live WebSocket voice chat; Stripe payments, Twilio SMS/voice. Next.js, React, Chakra UI, Zustand, MongoDB."),
  ("MCP Atlas (mcp-atlas-orcin.vercel.app)",
