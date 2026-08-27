@@ -31,15 +31,16 @@ SUMMARY=("Principal Frontend Engineer, 15 years building production web systems,
  "(PostgreSQL via Supabase), no PDF/document-generation work, no prior regulated/government environment.")
 JOBS=[
  ("Frontend Engineer, AI Evaluation & Red-Teaming (Contract)","Handshake","Jun 2026 - Jul 2026",None,[
-   "Assessed real-world code quality and red-teamed AI models on frontend/React engineering tasks, authoring adversarial cases to break model outputs and surface failure modes."]),
+   "Assessed real-world code quality and red-teamed AI models on frontend/React engineering tasks, authoring adversarial cases to break model outputs and surface failure modes. Worked in ChatGPT Pro and Cursor across four frontier LLMs."]),
  ("Frontend Engineer, AI Model Evaluation (Contract)","micro1","Apr 2026 - May 2026",None,[
-   "Ranked and scored AI model outputs against evaluation rubrics on React/TypeScript coding tasks, with adversarial testing to expose model weaknesses."]),
+   "Ranked and scored AI model outputs against evaluation rubrics on React/TypeScript coding tasks, with adversarial testing to expose model weaknesses. Worked in ChatGPT Pro and Cursor across four frontier LLMs."]),
  ("Frontend Engineer, AI Model Evaluation (Contract)","Mercor","Feb 2026 - Mar 2026",None,[
-   "Evaluated and ranked AI model outputs against scoring rubrics on advanced frontend/React tasks; probed models with adversarial cases to surface failure modes."]),
+   "Evaluated and ranked AI model outputs against scoring rubrics on advanced frontend/React tasks; probed models with adversarial cases to surface failure modes. Worked in ChatGPT Pro and Cursor across four frontier LLMs."]),
  ("Staff Frontend Engineer & Tech Lead to Engineering Director","Redesign Health","Jul 2022 - May 2024",None,[
    "Promoted twice to Engineering Director; led delivery across three cross-functional teams (15+ members) while staying hands-on as a frontend architecture SME.",
    "Spearheaded a React design system of 50+ reusable components (Storybook + Chromatic) adopted across teams: 30% dev-time reduction across a 10-15 engineer org.",
    "Engineered 20+ data-visualization components with custom hooks and Zustand: 40% rendering-overhead reduction on large datasets; established a Chromatic visual-regression workflow.",
+   "Adopted Ponicode for AI-generated React unit-test scaffolding, raising test coverage on new components with less manual boilerplate.",
    "Built an onboarding methodology that trained backend engineers to production-level React in one month."]),
  ("Senior Frontend Engineer & Tech Lead","Pineapple Corporation","Jan 2022 - Jul 2022",None,[
    "Architected an Nx monorepo with shared libraries across 8+ applications (35% version-control efficiency gain); Storybook + Chromatic workflow for 60+ components; standardized state with Redux Toolkit.",
@@ -63,13 +64,13 @@ PROJECTS=[
  ("ForgeKit Storybook MCP (npmjs.com)",
   "MCP server exposing Storybook metadata, argTypes, and usage patterns to AI coding agents - automating story generation, docs scaffolding, and component-testing workflows. Direct, hands-on experience designing what context an AI agent needs to do a task correctly."),
  ("TokenCast (tokencast.vercel.app)",
-  "Paste design tokens (Figma variables, CSS custom properties, or a Tailwind config) and get a live preview plus exportable theme code for Tailwind, Chakra, and shadcn/ui, with server-rendered Save & Share links. React Router (framework mode: SSR, loaders, actions), React 19, TypeScript, Tailwind CSS 4, Supabase (RLS + SECURITY DEFINER RPCs, IP rate-limiting), Vitest + Playwright; Lighthouse 100 accessibility, 99 performance."),
+  "Paste design tokens (Figma variables, CSS custom properties, or a Tailwind config) and get a live preview plus exportable theme code for Tailwind, Chakra, and shadcn/ui, with server-rendered Save & Share links. Built with Cursor. React Router (framework mode: SSR, loaders, actions), React 19, TypeScript, Tailwind CSS 4, Supabase (RLS + SECURITY DEFINER RPCs, IP rate-limiting), Vitest + Playwright; Lighthouse 100 accessibility, 99 performance."),
  ("MCP Atlas (mcp-atlas-orcin.vercel.app)",
-  "Curated, link-verified directory of Model Context Protocol servers (18 official + community, searchable and filterable). Built with Astro (Zod-validated content collections + islands architecture), TypeScript, Vitest, and Playwright; Lighthouse 100 accessibility, 97 performance."),
+  "Curated, link-verified directory of Model Context Protocol servers (18 official + community, searchable and filterable). Built with Claude Code. Astro (Zod-validated content collections + islands architecture), TypeScript, Vitest, and Playwright; Lighthouse 100 accessibility, 97 performance."),
  ("Tidy App (tidyapp.me)",
-  "Offline-first React Native + Expo app; Zustand + TanStack Query; Supabase; Figma Code Connect; 90% test coverage."),
+  "Offline-first React Native + Expo app; Zustand + TanStack Query; Supabase; Figma Code Connect; 90% test coverage. Built with both Claude Code and Cursor, including production use of Cursor's background agent (verified via git co-author trailers on merged PRs) - real, shipped experience with autonomous agent workflows, not just interactive pairing."),
  ("Perch - open-source voice-assistant widget",
-  "Drop-in voice AI for any website (one script tag + React SDK) built on ElevenLabs Conversational AI: dependency-free Shadow-DOM core, React SDK, and a serverless signed-URL proxy that keeps the API key server-side."),
+  "Drop-in voice AI for any website (one script tag + React SDK) built on ElevenLabs Conversational AI: dependency-free Shadow-DOM core, React SDK, and a serverless signed-URL proxy that keeps the API key server-side. Built end-to-end with Claude Code."),
  ("Santa Chat AI - AI-powered Santa Claus experience",
   "Real-time chat, live phone calls, and SMS with Santa via ElevenLabs text-to-speech and Twilio, an LLM chat backend, and Stable Diffusion image generation; Stripe-based subscription tokens. Selected by ElevenLabs for a 300K-token grant. Next.js, React, Chakra UI, Zustand, MongoDB, NextAuth."),
  ("Textation - AI character chat and avatar platform",
@@ -79,7 +80,7 @@ PROJECTS=[
 ]
 SKILLS=[
  ("Languages","JavaScript (15 yrs), TypeScript (strict), HTML5, CSS3, SQL, PHP (legacy)"),
- ("Agentic AI Development","Model Context Protocol (MCP) - author production MCP servers, not just a consumer; Claude Code, Cursor, daily production use; AI model evaluation & red-teaming (adversarial testing of AI outputs)"),
+ ("Agentic AI Development","Model Context Protocol (MCP) - author production MCP servers, not just a consumer; Claude Code and Cursor (including Cursor's background/autonomous agent) in daily production use; ChatGPT Pro; Ponicode (AI-generated unit tests); AI model evaluation & red-teaming across frontier LLMs (adversarial testing of AI outputs)"),
  ("Frameworks & Libraries","React 19, Next.js, React Native, Expo, TanStack Start, Node.js / NestJS, React Hooks, Concurrent Rendering"),
  ("Design Systems & Tools","Storybook 10+, Chromatic, Chakra UI, shadcn/ui, Tamagui, Ark UI, Radix UI, Styled Components / CSS-in-JS, Figma Code Connect"),
  ("Testing & Accessibility","Vitest, Jest, Playwright, React Testing Library, WCAG 2.1 AA"),
