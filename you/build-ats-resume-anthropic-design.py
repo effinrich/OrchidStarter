@@ -43,9 +43,11 @@ JOBS=[
    "Architected an Nx monorepo with shared libraries across 8+ applications (35% version-control efficiency gain); Storybook + Chromatic workflow for 60+ components; standardized state with Redux Toolkit.",
    "Built cross-platform architecture with Expo, Nx, and React Native (25% mobile performance gain for 100K+ users)."]),
  ("Founding Frontend Engineer","PHC Global","Jul 2021 - Jan 2022",None,[
-   "Set the foundational frontend architecture for a B2B fintech dashboard: Nx monorepo with 30+ shared libraries and gRPC middleware (40% developer-experience improvement); lifted NPS-measured satisfaction 35%; cut infrastructure costs 30% via GCP, gRPC, and Kubernetes."]),
+   "Set the foundational frontend architecture for a B2B fintech dashboard: Nx monorepo with 30+ shared libraries and gRPC middleware (40% developer-experience improvement); lifted NPS-measured satisfaction 35%; cut infrastructure costs 30% via GCP, gRPC, and Kubernetes.",
+   "Standardized client state with Redux Toolkit (RTK) and server state with React Query across the platform."]),
  ("Lead Frontend Engineer","Freebird","Sep 2016 - Jan 2021",None,[
    "Built one of the earliest production React UI libraries on Storybook: a 200-component design system spanning B2B, B2C, and React Native, eliminating the need for separate iOS and Android teams.",
+   "Migrated the team's Redux + Redux-Saga boilerplate to Redux Toolkit (RTK) in 2019, cutting state-management boilerplate and standardizing patterns across the design system.",
    "Served as design-engineering liaison across client, sales, and marketing; shipped B2B/B2C and internal dashboards (React, NestJS, D3.js) and a React Native app with real-time data views."]),
  ("Lead Web Developer","FaceCake Marketing Technologies","Oct 2010 - Sep 2016","Los Angeles, CA",[
    "Pioneered browser-based AR try-on for NARS, one of the first of its kind: compiled OpenCV to JavaScript via Emscripten for real-time client-side computer vision over getUserMedia, with Pixi.js, WebGL, and Three.js powering real-time face-tracking and makeup-rendering. Worked directly with Pixi.js's creator on techniques no one had attempted before, years ahead of mainstream WebAR.",
