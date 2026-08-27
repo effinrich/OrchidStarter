@@ -93,7 +93,7 @@ SKILLS=[
 def h(s): return esc(s)
 P=[f'<div class="name">{h(NAME)}</div>',f'<div class="title">{h(TITLE)}</div>',f'<div class="contact">{h(CONTACT)}</div>','<h2>Summary</h2>',f'<p>{h(SUMMARY)}</p>','<h2>Experience</h2>']
 for t,co,d,loc,bl in JOBS:
-    P.append(f'<p class="role"><b>{h(t)} &mdash; {h(co)}</b></p>'); P.append(f'<p class="dates">{h(d+(" | "+loc if loc else ""))}</p>')
+    P.append(f'<p class="role"><b>{h(t)} &mdash; {h(co)}</b>{" ("+h(loc)+")" if loc else ""}</p>'); P.append(f'<p class="dates">{h(d)}</p>')
     P.append('<ul>'+''.join(f'<li>{h(b)}</li>' for b in bl)+'</ul>')
 P.append('<h2>Projects</h2>')
 for n,d in PROJECTS: P.append(f'<p class="proj"><b>{h(n)}</b> &mdash; {h(d)}</p>')
@@ -114,7 +114,7 @@ def para(r,after=100,bullet=False,before=0):
 def hd(t): return ('<w:p><w:pPr><w:spacing w:before="200" w:after="70"/><w:pBdr><w:bottom w:val="single" w:sz="6" w:space="1" w:color="000000"/></w:pBdr></w:pPr>'+f'<w:r><w:rPr><w:b/><w:caps/><w:sz w:val="22"/></w:rPr><w:t xml:space="preserve">{esc(t)}</w:t></w:r></w:p>')
 B=[f'<w:p><w:pPr><w:spacing w:after="20"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="38"/></w:rPr><w:t>{esc(NAME)}</w:t></w:r></w:p>',para(rune(TITLE,sz=24),after=40),para(rune(CONTACT,sz=19),after=60),hd("Summary"),para(rune(SUMMARY,sz=21)),hd("Experience")]
 for t,co,d,loc,bl in JOBS:
-    B.append(para(rune(f"{t} - {co}",b=True,sz=21),after=20,before=120)); B.append(para(rune(d+(" | "+loc if loc else ""),sz=19),after=40))
+    B.append(para(rune(f"{t} - {co}",b=True,sz=21)+(rune(" ("+loc+")",sz=21) if loc else ""),after=20,before=120)); B.append(para(rune(d,sz=19),after=40))
     for b in bl: B.append(para(rune(b,sz=21),bullet=True,after=50))
 B.append(hd("Projects"))
 for n,d in PROJECTS: B.append(para(rune(n+" - ",b=True,sz=21)+rune(d,sz=21),after=60))
