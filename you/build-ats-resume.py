@@ -31,7 +31,8 @@ JOBS=[
    "Spearheaded a React design system of 50+ reusable components (Storybook + Chromatic) adopted across teams: 30% dev-time reduction across a 10-15 engineer org.",
    "Engineered 20+ data-visualization components with custom hooks and Zustand: 40% rendering-overhead reduction on large datasets; established a Chromatic visual-regression workflow.",
    "Adopted Ponicode for AI-generated React unit-test scaffolding, raising test coverage on new components with less manual boilerplate.",
-   "Built an onboarding methodology that trained backend engineers to production-level React in one month."]),
+   "Built an onboarding methodology that trained backend engineers to production-level React in one month.",
+   "Drove build-tooling modernization: migrated to Vite (became the org's default bundler by early 2023) and to Tailwind CSS for an internal sister app to the client portal; migrated the team's default e2e suite from Cypress to Playwright; generated type-safe React Query hooks from OpenAPI/Swagger specs; collaborated with backend on JWT auth and authored the specs for an OIDC migration that was shelved when the team was restructured."]),
  ("Senior Frontend Engineer & Tech Lead","Pineapple Corporation","Jan 2022 - Jul 2022",None,[
    "Architected Nx monorepo with a design system based shared UI library, a cross-platform (iOS, Android, web) application, and a NestJS backend.",
    "Built cross-platform architecture with Expo, Nx, and React Native (25% mobile performance gain for 100K+ users)."]),
@@ -73,11 +74,11 @@ SKILLS=[
  ("Languages","JavaScript (15 yrs), TypeScript (strict), HTML5, CSS3, SQL, PHP (legacy)"),
  ("Frameworks & Libraries","React 19, Next.js, React Native, Expo, TanStack Start, Node.js / NestJS, React Hooks, Concurrent Rendering"),
  ("Graphics & Real-Time Rendering","Pixi.js, WebGL, Three.js, Emscripten (C++ to JS/WASM), OpenCV, real-time client-side computer vision"),
- ("Design Systems & Tools","Storybook 10+, Chromatic, Chakra UI, shadcn/ui, Tamagui, Ark UI, Radix UI, Styled Components / CSS-in-JS, Figma Code Connect"),
+ ("Design Systems & Tools","Storybook 10+, Chromatic, Chakra UI, shadcn/ui, Tamagui, Ark UI, Radix UI, Tailwind CSS, Styled Components / CSS-in-JS, Figma Code Connect"),
  ("Agentic AI Development","Model Context Protocol (MCP) - author production MCP servers, not just a consumer; Claude Code and Cursor (including Cursor's background/autonomous agent) in daily production use; ChatGPT Pro; Ponicode (AI-generated unit tests); Figma MCP; AI model evaluation & red-teaming across frontier LLMs"),
- ("DevOps & Monorepo","Nx, Turborepo, pnpm workspaces, Module Federation, Oxlint, GitHub Actions, EAS Build, GCP, Kubernetes, gRPC"),
- ("State & Data","Redux Toolkit, Zustand, TanStack Query, REST, GraphQL, tRPC, Supabase, PostgreSQL, Context API"),
- ("Testing & Accessibility","Vitest, Jest, Playwright, React Testing Library, WCAG 2.1 AA"),
+ ("DevOps & Monorepo","Nx, Turborepo, pnpm workspaces, Module Federation, Vite, Oxlint, GitHub Actions, EAS Build, GCP, Kubernetes, gRPC"),
+ ("State & Data","Redux Toolkit, Zustand, TanStack Query, REST, GraphQL, tRPC, OpenAPI/Swagger (client & hook codegen), JWT, Supabase, PostgreSQL, Context API"),
+ ("Testing & Accessibility","Vitest, Jest, Playwright, Cypress, React Testing Library, WCAG 2.1 AA"),
 ]
 
 def h(s): return esc(s)
