@@ -20,7 +20,7 @@ NAME="RICH TILLMAN"; TITLE="Principal Frontend Engineer"
 CONTACT="Elizabethton, TN | 843-834-0041 | richtillman@pm.me | linkedin.com/in/effinrich | github.com/effinrich | richtillman.xyz"
 SUMMARY=("Principal Frontend Engineer with 15 years building production design systems and the AI-powered creative/developer "
  "tooling that gives teams leverage: creator of ForgeKit, an open-source CLI + MCP server suite bridging Figma to React to "
- "Storybook (5,700+ npm installs, real production adoption) - author MCP servers daily, at the company that created the "
+ "Storybook (6,200+ npm installs, real production adoption) - author MCP servers daily, at the company that created the "
  "protocol. Architecture owner across five 0-to-1 startups (IC to Engineering Director), including a 200-component design "
  "system spanning web and React Native, and a from-scratch B2B platform architecture. Deep Core Web Vitals discipline "
  "(Lighthouse 100 accessibility, 97-99 performance on recent projects). Honest gap: no dedicated headless-CMS-platform or "
@@ -55,7 +55,7 @@ JOBS=[
 ]
 PROJECTS=[
  ("ForgeKit - independent open-source developer-tooling venture (2024 - 2026)",
-  "Open-source CLI + MCP server suite bridging Figma to React to Storybook for design-system teams. 5,700+ npm installs with active production adoption. forgekit.cloud, github.com/effinrich, npmjs.com."),
+  "Open-source CLI + MCP server suite bridging Figma to React to Storybook for design-system teams. 6,200+ npm installs with active production adoption. forgekit.cloud, github.com/effinrich, npmjs.com."),
  ("ForgeKit Core CLI (forgekit.cloud)",
   "TypeScript CLI scaffolding production-ready Nx monorepos with React 18, Storybook 10+, Vitest, Playwright, and GitHub Actions CI/CD; targets Chakra UI, shadcn/ui, and Tamagui across web and universal React Native. Used recursively to scaffold ForgeKit itself."),
  ("ForgeKit Figma MCP (npmjs.com)",

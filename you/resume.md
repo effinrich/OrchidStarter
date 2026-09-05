@@ -1,15 +1,15 @@
 # RICH TILLMAN — Principal Frontend Engineer
 Elizabethton, TN · 843-834-0041 · richtillman@pm.me · linkedin.com/in/effinrich · github.com/effinrich · richtillman.xyz
 
-**Key metrics:** 5,700+ npm installs · ~$400K/mo revenue lift · 30% dev-time reduction · 200-component design system · IC → Engineering Director · 15 years
+**Key metrics:** 6,200+ npm installs · ~$400K/mo revenue lift · 30% dev-time reduction · 200-component design system · IC → Engineering Director · 15 years
 
 ## SUMMARY
-Principal Frontend Engineer with 15 years building production UI systems, specializing in React/TypeScript design systems and Storybook-driven development. Founder of ForgeKit (open-source CLI + MCP server suite bridging Figma to React, 5,700+ npm installs). IC to Engineering Director across five 0-to-1 startups. Ships products end-to-end — frontend-deep, self-sufficient across the stack. Seeking Principal / Senior Frontend, Product Engineer, and design-systems/developer-tooling roles.
+Principal Frontend Engineer with 15 years building production UI systems, specializing in React/TypeScript design systems and Storybook-driven development. Founder of ForgeKit (open-source CLI + MCP server suite bridging Figma to React, 6,200+ npm installs). IC to Engineering Director across five 0-to-1 startups. Ships products end-to-end — frontend-deep, self-sufficient across the stack. Seeking Principal / Senior Frontend, Product Engineer, and design-systems/developer-tooling roles.
 
 ## EXPERIENCE
 ### ForgeKit — Founder & Principal Engineer
 *Independent developer-tooling venture · self-directed (concurrent with the contract role below) · Jun 2024 – Apr 2026*
-- Founded ForgeKit — open-source CLI + MCP server suite (forgekit-figma-mcp, forgekit-storybook-mcp, Core CLI) bridging Figma → React → Storybook. 5,700+ npm installs, active production adoption.
+- Founded ForgeKit — open-source CLI + MCP server suite (forgekit-figma-mcp, forgekit-storybook-mcp, Core CLI) bridging Figma → React → Storybook. 6,200+ npm installs, active production adoption.
 - Took it zero to published, adopted packages solo; scaffolded the suite with its own Core CLI (recursive proof point).
 - Designed MCP servers exposing Figma tokens + Storybook metadata to AI coding agents; integrated GraphQL for dynamic token fetching.
 
@@ -46,7 +46,7 @@ Principal Frontend Engineer with 15 years building production UI systems, specia
 
 ## SELECTED PROJECTS & CASE STUDIES
 - **ForgeKit Core CLI** (forgekit.cloud · github.com/effinrich) — TS CLI scaffolding Nx monorepos (React 18, Storybook 10+, Vitest, Playwright, GH Actions); Chakra/shadcn/Tamagui. Used recursively.
-- **ForgeKit Figma & Storybook MCP servers** (npmjs.com) — MCP servers for Figma tokens + Storybook metadata to AI agents. Core of 5,700+ installs.
+- **ForgeKit Figma & Storybook MCP servers** (npmjs.com) — MCP servers for Figma tokens + Storybook metadata to AI agents. Core of 6,200+ installs.
 - **Tidy App** (tidyapp.me) — offline-first RN + Expo app; Zustand + TanStack Query; Supabase; RevenueCat; 90% coverage.
 
 ## TECHNICAL SKILLS

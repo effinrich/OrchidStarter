@@ -16,7 +16,7 @@ Own significant surfaces of anthropic.com/claude.com — architecture, design sy
 "Fifteen years of production design systems and frontend architecture, plus the AI-powered tooling that gives design-and-engineering teams leverage — I author MCP servers, the protocol Anthropic created, as part of my daily practice. This is close to the clearest expression I've seen of the intersection I've spent my career in."
 
 ## Signature stories (map to what they actually asked for)
-1. **ForgeKit — near-verbatim match.** Open-source CLI + MCP server suite bridging Figma → React → Storybook, 5,700+ npm installs, real production adoption. → directly answers "built AI-powered creative/developer tooling with real adoption, such as MCP servers... design system generators."
+1. **ForgeKit — near-verbatim match.** Open-source CLI + MCP server suite bridging Figma → React → Storybook, 6,200+ npm installs, real production adoption. → directly answers "built AI-powered creative/developer tooling with real adoption, such as MCP servers... design system generators."
 2. **Redesign Health — architecture SME, IC→Director.** 50+ component design system (Storybook + Chromatic), 30% dev-time reduction, 10-15 eng org. → design-system ownership + mentorship + technical leadership at scale.
 3. **Freebird — 200-component design system, web + React Native.** Eliminated need for separate mobile teams; design-engineering liaison across client/sales/marketing. → cross-functional partnership + craft at scale.
 4. **PHC Global — founding frontend architect.** Nx monorepo, 30+ shared libraries, gRPC middleware, GCP/Kubernetes. → "own architecture decisions and the consequences of them in production," partnering with platform/infra.

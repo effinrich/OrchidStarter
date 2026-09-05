@@ -23,7 +23,7 @@ NAME="RICH TILLMAN"; TITLE="Principal Frontend Engineer"
 CONTACT="Elizabethton, TN | 843-834-0041 | richtillman@pm.me | linkedin.com/in/effinrich | github.com/effinrich | richtillman.xyz"
 SUMMARY=("Principal Frontend Engineer (5+ yrs at Staff/Senior altitude, 15 years total) specializing in React/React Native, "
  "TypeScript, and the design-to-code craft that makes member-facing products feel alive: creator of ForgeKit, an open-source "
- "CLI + MCP suite bridging Figma to React (5,700+ npm installs) - I work from a Figma file daily and know when something is "
+ "CLI + MCP suite bridging Figma to React (6,200+ npm installs) - I work from a Figma file daily and know when something is "
  "off. Shipped production React Native at 100K+ users (25% mobile performance gain), 200+ component design systems, and "
  "AI-integrated consumer products end-to-end (LLM orchestration, real-time personalization). IC to Engineering Director "
  "across five 0-to-1 startups, making the real polish-vs-velocity tradeoffs that come with it. AI-native by default: Claude "
@@ -59,7 +59,7 @@ JOBS=[
 ]
 PROJECTS=[
  ("ForgeKit - independent open-source developer-tooling venture (2024 - 2026)",
-  "Open-source CLI + MCP server suite bridging Figma to React to Storybook for design-system teams. 5,700+ npm installs with active production adoption. forgekit.cloud, github.com/effinrich, npmjs.com."),
+  "Open-source CLI + MCP server suite bridging Figma to React to Storybook for design-system teams. 6,200+ npm installs with active production adoption. forgekit.cloud, github.com/effinrich, npmjs.com."),
  ("ForgeKit Core CLI (forgekit.cloud)",
   "TypeScript CLI scaffolding production-ready Nx monorepos with React 18, Storybook 10+, Vitest, Playwright, and GitHub Actions CI/CD; targets Chakra UI, shadcn/ui, and Tamagui across web and universal React Native. Used recursively to scaffold ForgeKit itself."),
  ("ForgeKit Figma MCP (npmjs.com)",

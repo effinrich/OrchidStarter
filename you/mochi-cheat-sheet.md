@@ -12,7 +12,7 @@ Consumer telehealth product (membership weight-loss/GLP-1 care + derm/hair/welln
 
 ## Signature stories (each maps to what they'll probe)
 1. **Freebird — 200-component design system spanning web + React Native.** Eliminated the need for separate iOS/Android teams; one component library driving B2B, B2C, and mobile. → directly answers "React + React Native, one system, consumer product."
-2. **ForgeKit — Figma → React, literally.** Open-source CLI + MCP suite (5,700+ npm installs) that scaffolds production React from Figma variables/design tokens. If they hand you a Figma-to-component build task, say this out loud — you've built the *tool category* for this exact task, not just done it once.
+2. **ForgeKit — Figma → React, literally.** Open-source CLI + MCP suite (6,200+ npm installs) that scaffolds production React from Figma variables/design tokens. If they hand you a Figma-to-component build task, say this out loud — you've built the *tool category* for this exact task, not just done it once.
 3. **Pineapple Corporation — Expo/Nx/React Native, 25% mobile performance gain, 100K+ users.** → real production RN at consumer scale, not a toy app.
 4. **Redesign Health — 50+ component design system, 30% dev-time reduction, 10-15 eng org.** → design-system ownership + cross-team adoption at Sr/Staff scope.
 5. **Tidy App — offline-first React Native + Expo, 90% test coverage.** → mobile quality bar, offline/sync concerns relevant to a healthcare app people use daily.

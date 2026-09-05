@@ -9,22 +9,28 @@ def esc(t): return html.escape(t, quote=False)
 
 NAME="RICH TILLMAN"; TITLE="Principal Frontend Engineer"
 CONTACT="Elizabethton, TN | 843-834-0041 | richtillman@pm.me | linkedin.com/in/effinrich | github.com/effinrich | richtillman.xyz"
-SUMMARY=("Principal Frontend Engineer with 15 years building production UI systems, specializing in React/TypeScript design "
- "systems and Storybook-driven development. Creator of ForgeKit, an open-source CLI + MCP server suite bridging Figma to "
- "React (5,700+ npm installs). IC to Engineering Director across five 0-to-1 startups. Ships products end-to-end, "
- "frontend-deep and self-sufficient across the stack. Seeking Principal / Senior Frontend, Product Engineer, and "
- "design-systems / developer-tooling roles.")
+SUMMARY=("Principal Frontend Engineer, 15 years - founding/architecture-level engineer across five 0-to-1 startups, IC to "
+ "Engineering Director, with real experience running teams, not just shipping UI. The throughline across every role: Nx "
+ "monorepo architecture, structural and lint tooling (now Oxlint), and the design-system to shared-UI-library to frontend "
+ "to BFF to backend pattern, built repeatedly at Freebird, Pineapple, PHC Global, and Redesign Health. Early, genuine "
+ "adopter of React and Storybook (2016 - still active in both communities' Discords), and pioneered browser-based AR for "
+ "NARS Cosmetics years before WebAR went mainstream. Deeply agent-native: creator of ForgeKit, an open-source CLI + MCP "
+ "server suite (6,200+ npm installs across three separate first-time package releases) that is itself harness/spec "
+ "tooling for AI coding agents - I design what context an agent needs to do a task right, not just prompt it. Claude "
+ "Code and Cursor daily, including production use of Cursor's background agent. Seeking Principal / Staff Frontend, "
+ "Product Engineer, or engineering-leadership roles where architecture, AI-native tooling, and real ownership meet.")
 JOBS=[
  ("Frontend Engineer, AI Evaluation & Red-Teaming (Contract)","Handshake","Jun 2026 - Jul 2026",None,[
-   "Assessed real-world code quality and red-teamed AI models on frontend/React engineering tasks, authoring adversarial cases to break model outputs and surface failure modes."]),
+   "Assessed real-world code quality and red-teamed AI models on frontend/React engineering tasks, authoring adversarial cases to break model outputs and surface failure modes. Worked in ChatGPT Pro and Cursor across four frontier LLMs."]),
  ("Frontend Engineer, AI Model Evaluation (Contract)","micro1","Apr 2026 - May 2026",None,[
-   "Ranked and scored AI model outputs against evaluation rubrics on React/TypeScript coding tasks, with adversarial testing to expose model weaknesses."]),
+   "Ranked and scored AI model outputs against evaluation rubrics on React/TypeScript coding tasks, with adversarial testing to expose model weaknesses. Worked in ChatGPT Pro and Cursor across four frontier LLMs."]),
  ("Frontend Engineer, AI Model Evaluation (Contract)","Mercor","Feb 2026 - Mar 2026",None,[
-   "Evaluated and ranked AI model outputs against scoring rubrics on advanced frontend/React tasks; probed models with adversarial cases to surface failure modes."]),
+   "Evaluated and ranked AI model outputs against scoring rubrics on advanced frontend/React tasks; probed models with adversarial cases to surface failure modes. Worked in ChatGPT Pro and Cursor across four frontier LLMs."]),
  ("Staff Frontend Engineer & Tech Lead to Engineering Director","Redesign Health","Jul 2022 - May 2024",None,[
    "Promoted twice to Engineering Director; led delivery across three cross-functional teams (15+ members) while staying hands-on as a frontend architecture SME.",
    "Spearheaded a React design system of 50+ reusable components (Storybook + Chromatic) adopted across teams: 30% dev-time reduction across a 10-15 engineer org.",
    "Engineered 20+ data-visualization components with custom hooks and Zustand: 40% rendering-overhead reduction on large datasets; established a Chromatic visual-regression workflow.",
+   "Adopted Ponicode for AI-generated React unit-test scaffolding, raising test coverage on new components with less manual boilerplate.",
    "Built an onboarding methodology that trained backend engineers to production-level React in one month."]),
  ("Senior Frontend Engineer & Tech Lead","Pineapple Corporation","Jan 2022 - Jul 2022",None,[
    "Architected an Nx monorepo with shared libraries across 8+ applications (35% version-control efficiency gain); Storybook + Chromatic workflow for 60+ components; standardized state with Redux Toolkit.",
@@ -42,25 +48,25 @@ JOBS=[
 ]
 PROJECTS=[
  ("ForgeKit - independent open-source developer-tooling venture (2024 - 2026)",
-  "Open-source CLI + MCP server suite bridging Figma to React to Storybook for design-system teams. 5,700+ npm installs with active production adoption. forgekit.cloud, github.com/effinrich, npmjs.com."),
+  "Open-source CLI + MCP server suite bridging Figma to React to Storybook for design-system teams - itself a harness/spec-tooling product for AI coding agents (Claude Code, Cursor). 6,200+ npm installs across three separate first-time package releases, with active production adoption. forgekit.cloud, github.com/effinrich, npmjs.com."),
  ("ForgeKit Core CLI (forgekit.cloud)",
   "TypeScript CLI scaffolding production-ready Nx monorepos with React 18, Storybook 10+, Vitest, Playwright, and GitHub Actions CI/CD; targets Chakra UI, shadcn/ui, and Tamagui across web and universal React Native. Used recursively to scaffold ForgeKit itself."),
  ("ForgeKit Figma MCP (npmjs.com)",
   "MCP server extracting Figma variables and design tokens; generates typed theme configs for Chakra UI, Tailwind, and shadcn - enabling AI-driven design-to-code workflows."),
  ("ForgeKit Storybook MCP (npmjs.com)",
-  "MCP server exposing Storybook metadata, argTypes, and usage patterns to AI coding agents - automating story generation, docs scaffolding, and component-testing workflows."),
+  "MCP server exposing Storybook metadata, argTypes, and usage patterns to AI coding agents - automating story generation, docs scaffolding, and component-testing workflows. Direct, hands-on experience designing what context an AI agent needs to do a task correctly."),
  ("Perch - open-source voice-assistant widget",
-  "Drop-in voice AI for any website (one script tag + React SDK) built on ElevenLabs Conversational AI: dependency-free Shadow-DOM core, React SDK, and a serverless signed-URL proxy that keeps the API key server-side."),
+  "Drop-in voice AI for any website (one script tag + React SDK) built on ElevenLabs Conversational AI: dependency-free Shadow-DOM core, React SDK, and a serverless signed-URL proxy that keeps the API key server-side. Built end-to-end with Claude Code."),
  ("Santa Chat AI - AI-powered Santa Claus experience",
-  "Real-time chat, live phone calls, and SMS with Santa via ElevenLabs text-to-speech and Twilio, an LLM chat backend, and Stable Diffusion image generation; Stripe-based subscription tokens. Selected by ElevenLabs for a 300K-token grant. Next.js, React, Chakra UI, Zustand, MongoDB, NextAuth."),
+  "Real-time chat, live phone calls, and SMS with Santa via ElevenLabs text-to-speech and Twilio, an LLM chat backend, and Stable Diffusion image generation; Stripe-based subscription tokens. Per-user personalization (parents added their child's name so Santa could address them by name) and analytics instrumentation (Amplitude, Google Analytics 4) tracked engagement in production. Next.js frontend/BFF layer proxying to a dedicated backend service. Selected by ElevenLabs for a 300K-token grant. Next.js, React, Chakra UI, Zustand, MongoDB, NextAuth."),
  ("Textation - AI character chat and avatar platform",
   "Pivoted from Santa Chat AI into a general AI-companion product: custom AI characters with LLM chat, ElevenLabs text-to-speech, Deepgram speech-to-text, image generation, SadTalker talking-head video, and live WebSocket voice chat; Stripe payments, Twilio SMS/voice. Next.js, React, Chakra UI, Zustand, MongoDB."),
  ("MCP Atlas (mcp-atlas-orcin.vercel.app)",
-  "Curated, link-verified directory of Model Context Protocol servers (18 official + community, searchable and filterable). Built with Astro (Zod-validated content collections + islands architecture), TypeScript, Vitest, and Playwright; Lighthouse 100 accessibility, 97 performance."),
+  "Curated, link-verified directory of Model Context Protocol servers (18 official + community, searchable and filterable). Built with Claude Code. Astro (Zod-validated content collections + islands architecture), TypeScript, Vitest, and Playwright; Lighthouse 100 accessibility, 97 performance."),
  ("TokenCast (tokencast.vercel.app)",
-  "Paste design tokens (Figma variables, CSS custom properties, or a Tailwind config) and get a live preview plus exportable theme code for Tailwind, Chakra, and shadcn/ui, with server-rendered Save & Share links. React Router (framework mode: SSR, loaders, actions), React 19, TypeScript, Tailwind CSS 4, Supabase (RLS + SECURITY DEFINER RPCs, IP rate-limiting), Vitest + Playwright; Lighthouse 100 accessibility, 99 performance."),
+  "Paste design tokens (Figma variables, CSS custom properties, or a Tailwind config) and get a live preview plus exportable theme code for Tailwind, Chakra, and shadcn/ui, with server-rendered Save & Share links. Built with Cursor. React Router (framework mode: SSR, loaders, actions), React 19, TypeScript, Tailwind CSS 4, Supabase (RLS + SECURITY DEFINER RPCs, IP rate-limiting), Vitest + Playwright; Lighthouse 100 accessibility, 99 performance."),
  ("Tidy App (tidyapp.me)",
-  "Offline-first React Native + Expo app; Zustand + TanStack Query; Supabase; Figma Code Connect; 90% test coverage."),
+  "Offline-first React Native + Expo app; Zustand + TanStack Query; Supabase; Figma Code Connect; 90% test coverage. Built with both Claude Code and Cursor, including production use of Cursor's background agent (verified via git co-author trailers on merged PRs)."),
  ("COVID-19 Hotspot Mapping",
   "Interactive thermal-style heat maps of COVID-19 hotspots and zones built on Mapbox GL, turning geospatial case data into a clear public-health visualization."),
 ]
@@ -69,8 +75,8 @@ SKILLS=[
  ("Frameworks & Libraries","React 19, Next.js, React Native, Expo, TanStack Start, Node.js / NestJS, React Hooks, Concurrent Rendering"),
  ("Graphics & Real-Time Rendering","Pixi.js, WebGL, Three.js, Emscripten (C++ to JS/WASM), OpenCV, real-time client-side computer vision"),
  ("Design Systems & Tools","Storybook 10+, Chromatic, Chakra UI, shadcn/ui, Tamagui, Ark UI, Radix UI, Styled Components / CSS-in-JS, Figma Code Connect"),
- ("AI & Tooling","Model Context Protocol (MCP), Claude Code, Cursor, Figma MCP, AI model evaluation & red-teaming"),
- ("DevOps & Monorepo","Nx, Turborepo, pnpm workspaces, Module Federation, GitHub Actions, EAS Build, GCP, Kubernetes, gRPC"),
+ ("Agentic AI Development","Model Context Protocol (MCP) - author production MCP servers, not just a consumer; Claude Code and Cursor (including Cursor's background/autonomous agent) in daily production use; ChatGPT Pro; Ponicode (AI-generated unit tests); Figma MCP; AI model evaluation & red-teaming across frontier LLMs"),
+ ("DevOps & Monorepo","Nx, Turborepo, pnpm workspaces, Module Federation, Oxlint, GitHub Actions, EAS Build, GCP, Kubernetes, gRPC"),
  ("State & Data","Redux Toolkit, Zustand, TanStack Query, REST, GraphQL, tRPC, Supabase, PostgreSQL, Context API"),
  ("Testing & Accessibility","Vitest, Jest, Playwright, React Testing Library, WCAG 2.1 AA"),
 ]

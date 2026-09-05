@@ -22,7 +22,7 @@ NAME="RICH TILLMAN"; TITLE="Principal Frontend Engineer"
 CONTACT="Elizabethton, TN | 843-834-0041 | richtillman@pm.me | linkedin.com/in/effinrich | github.com/effinrich | richtillman.xyz"
 SUMMARY=("Principal Frontend Engineer, 15 years building production web systems, full-stack and frontend-deep - the "
  "'Everything Engineer' shape: I write API endpoints, reason about infra, and set the technical bar on the frontend. "
- "Genuinely agent-native: creator of ForgeKit, an open-source CLI + MCP server suite (5,700+ npm installs) that is itself "
+ "Genuinely agent-native: creator of ForgeKit, an open-source CLI + MCP server suite (6,200+ npm installs) that is itself "
  "harness/spec tooling for AI coding agents - I have real opinions about context and harness design because I've built "
  "and shipped that category of tool, not just used it. Deep design-systems background (200+ component libraries, "
  "Storybook + Chromatic, WCAG 2.1 AA, Lighthouse 100 accessibility) and experience building data-dense, policy-laden "
@@ -58,7 +58,7 @@ JOBS=[
 ]
 PROJECTS=[
  ("ForgeKit - independent open-source developer-tooling venture (2024 - 2026)",
-  "Open-source CLI + MCP server suite bridging Figma to React to Storybook for design-system teams - itself a harness/spec-tooling product for AI coding agents (Claude Code, Cursor). 5,700+ npm installs with active production adoption. forgekit.cloud, github.com/effinrich, npmjs.com."),
+  "Open-source CLI + MCP server suite bridging Figma to React to Storybook for design-system teams - itself a harness/spec-tooling product for AI coding agents (Claude Code, Cursor). 6,200+ npm installs with active production adoption. forgekit.cloud, github.com/effinrich, npmjs.com."),
  ("ForgeKit Core CLI (forgekit.cloud)",
   "TypeScript CLI scaffolding production-ready Nx monorepos with React 18, Storybook 10+, Vitest, Playwright, and GitHub Actions CI/CD; targets Chakra UI, shadcn/ui, and Tamagui across web and universal React Native. Used recursively to scaffold ForgeKit itself."),
  ("ForgeKit Figma MCP (npmjs.com)",

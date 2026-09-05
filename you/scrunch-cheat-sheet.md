@@ -4,7 +4,7 @@ Help brands stay discoverable as search shifts to LLMs (ChatGPT/Claude/Gemini). 
 ## Your one line
 "You make brand content legible to LLMs; I make design systems legible to AI coding agents — same bet on structured, machine-consumable output."
 ## Bridge story
-ForgeKit — MCP servers making design systems consumable by AI agents, 5,700+ installs. Not just an AI-tooling user; I author the tooling.
+ForgeKit — MCP servers making design systems consumable by AI agents, 6,200+ installs. Not just an AI-tooling user; I author the tooling.
 ## Qs → moves
 "Why Scrunch?" → bridge story + high-ownership/AI-native fit.
 "Senior for this?" → "ownership over titles; let's align on scope/level."

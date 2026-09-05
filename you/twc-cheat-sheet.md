@@ -25,7 +25,7 @@ Interviewer: Brian · Prior round covered weather.com web vs. TV product differe
 "Stale is strictly better than empty. Cache invalidation should be additive — fetch fresh data in the background and swap it in once it resolves, never clear-then-fetch. That's stale-while-revalidate, and it's literally how TanStack Query works by default, which I've used in production — old data stays visible with a loading indicator, never a blank screen or error, which matters most for exactly the users on the worst connections."
 
 **How you use AI day to day (say this with confidence, not hedging)**
-"Claude Code and Cursor, daily — not autocomplete, an actual collaborator I hand specs to and review output from like a teammate's PR. I built real tooling on top of this — ForgeKit, an MCP server suite with 5,700+ installs — specifically so AI agents understand a codebase's design system instead of guessing. Real force-multiplier, I still own everything that ships."
+"Claude Code and Cursor, daily — not autocomplete, an actual collaborator I hand specs to and review output from like a teammate's PR. I built real tooling on top of this — ForgeKit, an MCP server suite with 6,200+ installs — specifically so AI agents understand a codebase's design system instead of guessing. Real force-multiplier, I still own everything that ships."
 
 ## The honest gap — own it before it surfaces as a surprise
 Your real production Next.js experience (Santa Chat AI, Textation) is **Pages Router (Next.js 12)**, not App Router. The answers above are accurate *knowledge* of the App Router model, but if Brian asks "tell me about a time you actually dealt with this in production," don't invent an App Router war story you don't have.

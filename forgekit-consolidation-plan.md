@@ -1,6 +1,6 @@
 # ForgeKit consolidation — planning notes
 
-Goal: audit scattered ForgeKit repos, diff overlapping/duplicate ones, identify canonical versions, consolidate into a single Nx monorepo. Motivated by: (1) it needs to actually work solidly before pointing an Anthropic interviewer at it, (2) real npm packages with 5,700+ installs can't break, (3) doing the consolidation itself is a good story for the Anthropic application (Nx monorepo architecture is Rich's own specialty).
+Goal: audit scattered ForgeKit repos, diff overlapping/duplicate ones, identify canonical versions, consolidate into a single Nx monorepo. Motivated by: (1) it needs to actually work solidly before pointing an Anthropic interviewer at it, (2) real npm packages with 6,200+ installs can't break, (3) doing the consolidation itself is a good story for the Anthropic application (Nx monorepo architecture is Rich's own specialty).
 
 ## Blocker
 This session's GitHub access is locked to `effinrich/OrchidStarter` only. Repo search works (not gated by the session allowlist) but read/write does not. Need the repos below added to this session (Claude Code web/app session settings) before any real audit/migration work can start.

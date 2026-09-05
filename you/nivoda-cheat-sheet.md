@@ -12,7 +12,7 @@ Own growth features end-to-end across the stack (TS/Node backend, React frontend
 
 ## Signature stories (map to what they actually asked for)
 1. **FaceCake/NARS — ~$400K/month revenue lift.** A web experience you owned end-to-end (architecture through deployment) that moved a real revenue number. → direct proof of "growth feature, measured impact," even though it predates the "growth engineer" title existing as a category.
-2. **ForgeKit + AI tooling.** Open-source CLI + MCP suite bridging Figma→React, 5,700+ installs; you literally build the category of tool they're asking engineers to use ("AI-assisted tools in engineering workflows"). → say this plainly, it's a rare, real match.
+2. **ForgeKit + AI tooling.** Open-source CLI + MCP suite bridging Figma→React, 6,200+ installs; you literally build the category of tool they're asking engineers to use ("AI-assisted tools in engineering workflows"). → say this plainly, it's a rare, real match.
 3. **Freebird — rideshare marketplace.** Two-sided marketplace (riders/drivers), real-time data views, B2B/B2C dashboards. → same underlying shape as Nivoda (buyers/suppliers), real-time operational data.
 4. **PHC Global — B2B fintech dashboard, NPS +35%.** Customer-facing product improvements tied to a measured satisfaction metric. → growth-adjacent, measurable, B2B.
 5. **Fullstack production Node/NestJS** across multiple roles — matches their TS/Node backend requirement; you're not "frontend who can technically touch backend," you've owned backend architecture (PHC founding architect).

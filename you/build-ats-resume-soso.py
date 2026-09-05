@@ -21,7 +21,7 @@ SUMMARY=("Principal Frontend Engineer with 15 years building production UI syste
  "of its kind, working directly with Pixi.js's creator on techniques no one had attempted before. Also full-stack "
  "architecture (React/TypeScript, Node.js backend services) and real-time, AI-integrated products end-to-end (LLM "
  "orchestration, live voice and image generation, WebSocket sessions), plus a sensor-driven embedded physical installation "
- "(Kinect motion tracking on a retail kiosk). Creator of ForgeKit, an open-source CLI + MCP server suite (5,700+ npm installs). "
+ "(Kinect motion tracking on a retail kiosk). Creator of ForgeKit, an open-source CLI + MCP server suite (6,200+ npm installs). "
  "IC to Engineering Director across five 0-to-1 startups, plus recent contract/freelance engagements. Core frontend depth is "
  "React, not Vue; ramps fast on new stacks by design, not exception. Seeking Principal / Senior Frontend, full-stack, and "
  "creative-technology roles.")
@@ -59,7 +59,7 @@ PROJECTS=[
  ("Textation - AI character chat and avatar platform",
   "Pivoted from Santa Chat AI into a general AI-companion product: custom AI characters with LLM chat, ElevenLabs text-to-speech, Deepgram speech-to-text, image generation, SadTalker talking-head video, and live WebSocket voice chat; Stripe payments, Twilio SMS/voice. Next.js, React, Chakra UI, Zustand, MongoDB."),
  ("ForgeKit - independent open-source developer-tooling venture (2024 - 2026)",
-  "Open-source CLI + MCP server suite bridging Figma to React to Storybook for design-system teams. 5,700+ npm installs with active production adoption. forgekit.cloud, github.com/effinrich, npmjs.com."),
+  "Open-source CLI + MCP server suite bridging Figma to React to Storybook for design-system teams. 6,200+ npm installs with active production adoption. forgekit.cloud, github.com/effinrich, npmjs.com."),
  ("ForgeKit Core CLI (forgekit.cloud)",
   "TypeScript CLI scaffolding production-ready Nx monorepos with React 18, Storybook 10+, Vitest, Playwright, and GitHub Actions CI/CD; targets Chakra UI, shadcn/ui, and Tamagui across web and universal React Native. Used recursively to scaffold ForgeKit itself."),
  ("ForgeKit Figma MCP (npmjs.com)",

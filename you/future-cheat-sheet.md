@@ -17,7 +17,7 @@ Own the frontend architecture and implementation of the core member-facing produ
 "Fifteen years of production React/React Native and the design-to-code craft that makes a member-facing product feel considered — I work from a Figma file daily and know when something's off. And this one's personal: I've trained four days a week and cooked from scratch since I was 34, so Rishi's actual thesis — that accountability, not AI alone, is what changes behavior — isn't a talking point for me, it's how I've lived for over a decade."
 
 ## Signature stories (map to what they actually asked for)
-1. **ForgeKit — Figma-to-code, real adoption.** 5,700+ npm installs. → "strong design sensibility... work from a Figma file and know when something is off," almost verbatim.
+1. **ForgeKit — Figma-to-code, real adoption.** 6,200+ npm installs. → "strong design sensibility... work from a Figma file and know when something is off," almost verbatim.
 2. **Tidy App — React Native + Expo, Figma Code Connect, 90% test coverage.** → consumer mobile + design-to-code + testing discipline, three JD asks in one project.
 3. **Pineapple — 25% mobile performance gain, 100K+ users.** → "familiarity with performance optimization for mobile apps at scale" (nice-to-have), directly matched.
 4. **Redesign Health — architecture SME, IC→Director, onboarding methodology.** → "set the standard for frontend code quality... code the next engineer can pick up."
