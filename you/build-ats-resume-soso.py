@@ -38,10 +38,11 @@ JOBS=[
    "Engineered 20+ data-visualization components with custom hooks and Zustand: 40% rendering-overhead reduction on large datasets; established a Chromatic visual-regression workflow.",
    "Built an onboarding methodology that trained backend engineers to production-level React in one month."]),
  ("Senior Frontend Engineer & Tech Lead","Pineapple Corporation","Jan 2022 - Jul 2022",None,[
-   "Architected an Nx monorepo with shared libraries across 8+ applications (35% version-control efficiency gain); Storybook + Chromatic workflow for 60+ components; standardized state with Redux Toolkit.",
+   "Architected Nx monorepo with a design system based shared UI library, a cross-platform (iOS, Android, web) application, and a NestJS backend.",
    "Built cross-platform architecture with Expo, Nx, and React Native (25% mobile performance gain for 100K+ users)."]),
  ("Founding Frontend Engineer","PHC Global","Jul 2021 - Jan 2022",None,[
-   "Set the foundational frontend architecture for a B2B fintech dashboard: Nx monorepo with 30+ shared libraries and gRPC middleware (40% developer-experience improvement); lifted NPS-measured satisfaction 35%; cut infrastructure costs 30% via GCP, gRPC, and Kubernetes.",
+   "Founding frontend architect for a healthtech/biosecurity startup: built the core product for enterprise clients (including Facebook and Amex, our first two customers) - a Mapbox GL heatmap of active COVID risk zones that clients used to schedule ground teams, plus flight/travel-arrangement suggestions and a separate interactive map for simulating alternate entry routes.",
+   "Set up the foundational architecture: Nx monorepo with 30+ shared libraries and gRPC middleware (40% developer-experience improvement); lifted NPS-measured satisfaction 35%; cut infrastructure costs 30% via GCP, gRPC, and Kubernetes.",
    "Standardized client state with Redux Toolkit (RTK) and server state with React Query across the platform."]),
  ("Lead Frontend Engineer","Freebird","Sep 2016 - Jan 2021",None,[
    "Built one of the earliest production React UI libraries on Storybook: a 200-component design system spanning B2B, B2C, and React Native, eliminating the need for separate iOS and Android teams.",
@@ -72,8 +73,6 @@ PROJECTS=[
   "Paste design tokens (Figma variables, CSS custom properties, or a Tailwind config) and get a live preview plus exportable theme code for Tailwind, Chakra, and shadcn/ui, with server-rendered Save & Share links. React Router (framework mode: SSR, loaders, actions), React 19, TypeScript, Tailwind CSS 4, Supabase (RLS + SECURITY DEFINER RPCs, IP rate-limiting), Vitest + Playwright; Lighthouse 100 accessibility, 99 performance."),
  ("Tidy App (tidyapp.me)",
   "Offline-first React Native + Expo app; Zustand + TanStack Query; Supabase; Figma Code Connect; 90% test coverage."),
- ("COVID-19 Hotspot Mapping",
-  "Interactive thermal-style heat maps of COVID-19 hotspots and zones built on Mapbox GL, turning geospatial case data into a clear public-health visualization."),
 ]
 SKILLS=[
  ("Languages","JavaScript (15 yrs), TypeScript (strict), HTML5, CSS3, SQL, PHP (legacy)"),

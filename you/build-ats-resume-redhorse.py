@@ -26,7 +26,8 @@ SUMMARY=("Principal Frontend Engineer, 15 years building production web systems,
  "harness/spec tooling for AI coding agents - I have real opinions about context and harness design because I've built "
  "and shipped that category of tool, not just used it. Deep design-systems background (200+ component libraries, "
  "Storybook + Chromatic, WCAG 2.1 AA, Lighthouse 100 accessibility) and experience building data-dense, policy-laden "
- "financial workflow UI (B2B fintech dashboard, founding architecture). US citizen, SECRET-clearance eligible. Honest "
+ "operational UI (a COVID risk-mapping and logistics platform for enterprise clients including Facebook and Amex, founding "
+ "architecture). US citizen, SECRET-clearance eligible. Honest "
  "gaps: no AWS/AWS CDK production experience (cloud background is GCP/Kubernetes/gRPC), no Prisma specifically "
  "(PostgreSQL via Supabase), no PDF/document-generation work, no prior regulated/government environment.")
 JOBS=[
@@ -43,10 +44,11 @@ JOBS=[
    "Adopted Ponicode for AI-generated React unit-test scaffolding, raising test coverage on new components with less manual boilerplate.",
    "Built an onboarding methodology that trained backend engineers to production-level React in one month."]),
  ("Senior Frontend Engineer & Tech Lead","Pineapple Corporation","Jan 2022 - Jul 2022",None,[
-   "Architected an Nx monorepo with shared libraries across 8+ applications (35% version-control efficiency gain); Storybook + Chromatic workflow for 60+ components; standardized state with Redux Toolkit.",
+   "Architected Nx monorepo with a design system based shared UI library, a cross-platform (iOS, Android, web) application, and a NestJS backend.",
    "Built cross-platform architecture with Expo, Nx, and React Native (25% mobile performance gain for 100K+ users)."]),
  ("Founding Frontend Engineer","PHC Global","Jul 2021 - Jan 2022",None,[
-   "Set the foundational frontend architecture for a B2B fintech dashboard: Nx monorepo with 30+ shared libraries and gRPC middleware (40% developer-experience improvement); lifted NPS-measured satisfaction 35%; cut infrastructure costs 30% via GCP, gRPC, and Kubernetes.",
+   "Founding frontend architect for a healthtech/biosecurity startup: built the core product for enterprise clients (including Facebook and Amex, our first two customers) - a Mapbox GL heatmap of active COVID risk zones that clients used to schedule ground teams, plus flight/travel-arrangement suggestions and a separate interactive map for simulating alternate entry routes.",
+   "Set up the foundational architecture: Nx monorepo with 30+ shared libraries and gRPC middleware (40% developer-experience improvement); lifted NPS-measured satisfaction 35%; cut infrastructure costs 30% via GCP, gRPC, and Kubernetes.",
    "Standardized client state with Redux Toolkit (RTK) and server state with React Query across the platform."]),
  ("Lead Frontend Engineer","Freebird","Sep 2016 - Jan 2021",None,[
    "Built one of the earliest production React UI libraries on Storybook: a 200-component design system spanning B2B, B2C, and React Native, eliminating the need for separate iOS and Android teams.",
@@ -77,8 +79,6 @@ PROJECTS=[
   "Real-time chat, live phone calls, and SMS with Santa via ElevenLabs text-to-speech and Twilio, an LLM chat backend, and Stable Diffusion image generation; Stripe-based subscription tokens. Selected by ElevenLabs for a 300K-token grant. Next.js, React, Chakra UI, Zustand, MongoDB, NextAuth."),
  ("Textation - AI character chat and avatar platform",
   "Pivoted from Santa Chat AI into a general AI-companion product: custom AI characters with LLM chat, ElevenLabs text-to-speech, Deepgram speech-to-text, image generation, SadTalker talking-head video, and live WebSocket voice chat; Stripe payments, Twilio SMS/voice. Next.js, React, Chakra UI, Zustand, MongoDB."),
- ("COVID-19 Hotspot Mapping",
-  "Interactive thermal-style heat maps of COVID-19 hotspots and zones built on Mapbox GL, turning geospatial case data into a clear public-health visualization."),
 ]
 SKILLS=[
  ("Languages","JavaScript (15 yrs), TypeScript (strict), HTML5, CSS3, SQL, PHP (legacy)"),
