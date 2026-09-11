@@ -2,6 +2,7 @@
 
 | Contact / Role | Company | Status | Next action |
 |---|---|---|---|
+| — | Mermaid — AI-First Frontend Engineer (Coral design system) | materials ready | strongest overall pipeline match to date; commented on the hiring LinkedIn post ("close to a year building AI tooling to automate design systems and prevent token drift") not realizing Rich had applied ~6mo prior — CEO + others viewed profile within minutes; resume tailored in you/resume-mermaid.html leading with ForgeKit (near-literal match to Coral's token-drift/design-token-automation mission) plus two real shipped design systems (Freebird 200+ components, Redesign Health 50+/30% dev-time reduction); "Just hire me" cover letter in you/cover-letter-mermaid.md references the LinkedIn moment; ready to (re-)apply
 | Robert MacCloy (CTO) | Scrunch (Sitecore) — Product Engineer | drafted | verify email, send outreach |
 | Product Engineer | Scrunch | materials ready | apply |
 | Staff SWE, People Products | Anthropic | materials ready | apply (why-Anthropic answer done) |
