@@ -29,7 +29,7 @@ SUMMARY=("Senior Frontend Engineer, 15 years, with a track record of building da
  "0-to-1 startups, IC to Engineering Director, with real experience running teams and setting technical direction, not "
  "just shipping features. US citizen (export-control / ITAR US-person status).")
 JOBS=[
- ("Frontend Engineer, AI Model Evaluation & Red-Teaming (Contract)","Independent Contractor \u2014 Mercor, micro1, Handshake","Feb 2026 - Jul 2026",None,[
+ ("Consultant, AI Model Evaluation & Red-Teaming","Independent (Mercor, micro1, Handshake)","Feb 2026 - Jul 2026",None,[
    "Evaluated, ranked, and red-teamed frontier AI model outputs against scoring rubrics on React/TypeScript frontend-engineering tasks across three sequential contract engagements (Mercor, then micro1, then Handshake); authored adversarial test cases to expose model failure modes and break outputs. Worked in ChatGPT Pro and Cursor across four frontier LLMs throughout."]),
  ("Staff Frontend Engineer & Tech Lead to Engineering Director","Redesign Health","Jul 2022 - May 2024",None,[
    "Promoted twice to Engineering Director; led delivery across three cross-functional teams (15+ members) while staying hands-on as a frontend architecture SME.",

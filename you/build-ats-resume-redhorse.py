@@ -31,7 +31,7 @@ SUMMARY=("Principal Frontend Engineer, 15 years building production web systems,
  "gaps: no AWS/AWS CDK production experience (cloud background is GCP/Kubernetes/gRPC), no Prisma specifically "
  "(PostgreSQL via Supabase), no PDF/document-generation work, no prior regulated/government environment.")
 JOBS=[
- ("Frontend Engineer, AI Model Evaluation & Red-Teaming (Contract)","Independent Contractor \u2014 Mercor, micro1, Handshake","Feb 2026 - Jul 2026",None,[
+ ("Consultant, AI Model Evaluation & Red-Teaming","Independent (Mercor, micro1, Handshake)","Feb 2026 - Jul 2026",None,[
    "Evaluated, ranked, and red-teamed frontier AI model outputs against scoring rubrics on React/TypeScript frontend-engineering tasks across three sequential contract engagements (Mercor, then micro1, then Handshake); authored adversarial test cases to expose model failure modes and break outputs. Worked in ChatGPT Pro and Cursor across four frontier LLMs throughout."]),
  ("Staff Frontend Engineer & Tech Lead to Engineering Director","Redesign Health","Jul 2022 - May 2024",None,[
    "Promoted twice to Engineering Director; led delivery across three cross-functional teams (15+ members) while staying hands-on as a frontend architecture SME.",

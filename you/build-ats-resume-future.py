@@ -32,7 +32,7 @@ SUMMARY=("Principal Frontend Engineer (5+ yrs at Staff/Senior altitude, 15 years
  "I'd ramp on App Router fast. Also live what Future teaches: training four days a week since 34, cooking a paleo/keto-hybrid "
  "diet from scratch - genuinely invested in sustained health behavior change, not just the product problem behind it.")
 JOBS=[
- ("Frontend Engineer, AI Model Evaluation & Red-Teaming (Contract)","Independent Contractor \u2014 Mercor, micro1, Handshake","Feb 2026 - Jul 2026",None,[
+ ("Consultant, AI Model Evaluation & Red-Teaming","Independent (Mercor, micro1, Handshake)","Feb 2026 - Jul 2026",None,[
    "Evaluated, ranked, and red-teamed frontier AI model outputs against scoring rubrics on React/TypeScript frontend-engineering tasks across three sequential contract engagements (Mercor, then micro1, then Handshake); authored adversarial test cases to expose model failure modes and break outputs. Worked in ChatGPT Pro and Cursor across four frontier LLMs throughout."]),
  ("Staff Frontend Engineer & Tech Lead to Engineering Director","Redesign Health","Jul 2022 - May 2024",None,[
    "Promoted twice to Engineering Director; led delivery across three cross-functional teams (15+ members) while staying hands-on as a frontend architecture SME.",
