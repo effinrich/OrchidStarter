@@ -1,42 +1,56 @@
-# ElevenLabs coding screen — strategy
+# ElevenLabs coding screen — strategy (CORRECTED)
 
-**Format:** React/TypeScript in **CoderPad**, **90 minutes**, async/self-paced. Link
-expires 5 days after you receive it — resendable, but email them *before* it expires
-if you need a fresh one. Difficulty is moderate; they say you won't need expert-level
-React/TS. It's about **judgment and clean, working code**, not tricks.
+**Format, confirmed by web research (verify live too):** async **CoderPad**, **90 minutes**,
+**2 medium + 1 medium-hard problem, data-structures/algorithms — not React.** Practical
+rather than puzzle-flavored: hash maps, stacks, two pointers, well-chosen sorts. Named
+examples: interval merging, an LRU cache, log-line parsing/transforming, a rate limiter,
+string manipulation with a hidden edge case. Link expires 5 days after you receive it.
 
-## What they actually score
-- **Working behavior, end to end.** Get things running; a partial feature that works
-  beats an ambitious one that doesn't.
-- **Engineering judgment** — sensible state shape, no needless complexity, readable code.
-- **Product sense.** ElevenLabs cares that you build the *right* thing. If a spec is
-  fuzzy, state a reasonable assumption out loud (in comments or the shared pad) and move.
+**This corrects an earlier version of this doc that assumed the screen was React-focused.**
+The React-component work (fixing/extending a real component — one reported example: an
+audio-transcription tool where text highlighting falls out of sync with playback) is a
+**separate, later, live round**, not this async one.
 
-## Time budget (90 min, ~2–3 tasks)
-- Read everything first (~5 min). Note what "done" means for each task.
-- Do the **cheapest wins first** — bug fixes and the pure-logic problem are fast points.
-- Leave the open-ended "build/finish a component" for the middle; timebox it.
-- Save ~10 min to re-read the prompts and check edge cases (empty states, no results).
+## What they actually score (per reported experiences)
+- **Time management and cleanliness, not cleverness.** You can execute your code live —
+  sloppy debugging burns the clock.
+- **Clean, idiomatic code, not just passing tests.** Name things like a coworker will
+  read them tomorrow.
+- Talk through your approach; write a couple of test inputs before declaring done.
+
+## Time budget (90 min, 2 medium + 1 medium-hard)
+- Read all three first (~5 min). Note constraints and edge cases up front.
+- Budget roughly 25 min / 25 min / 35–40 min (mediums first, save more time for the
+  medium-hard) — but stay flexible; if a "medium" is dragging, don't be afraid to bank
+  partial credit and move on, then return if time allows.
+- Save ~10 min at the end to re-run tests and sanity-check edge cases (empty input,
+  single element, boundary values).
 
 ## CoderPad specifics
-- It runs your code live in-browser; there's a **run/preview**. Use it constantly —
-  don't code blind for 20 minutes.
-- Do the **tutorial pad** they link first so the editor + run button aren't new to you.
-- You pick the language/env — choose **React + TypeScript** (or JS if faster for you).
-  Don't fight tooling; keep it simple.
+- It runs your code live in-browser — use the run/preview constantly, don't code blind.
+- Do the tutorial pad first so the editor isn't new to you.
+- Pick TypeScript or JavaScript, whichever is faster for you under time pressure — this
+  round isn't testing React, so there's no reason to reach for it.
 
-## React gotchas they love to test (all in this pad)
-- **Controlled inputs**: `value` + `onChange` both wired, or typing "does nothing."
-- **`key` on lists**: stable, from data (`v.id`), never the array index if the list reorders.
-- **Effect cleanup**: debounce/subscriptions must `clearTimeout`/unsubscribe in the
-  returned cleanup, or you leak timers and get stale updates.
-- **Derived state**: filter/compute with `useMemo` from source state; don't duplicate
-  state you can derive.
+## Patterns worth having cold before you sit down
+- **Hash map / Map for O(1) lookup or insertion-order tricks** (see `dsa/lruCache.mjs` —
+  delete+re-set to move an entry to "most recent").
+- **Two-pointer / sliding window** (see `dsa/rateLimiter.mjs`).
+- **Sort then merge/sweep** (see `dsa/mergeIntervals.mjs`).
+- **String edge cases**: empty input, single char, unicode, leading/trailing whitespace,
+  off-by-one on substring bounds.
+- **Stream/log parsing**: split → parse each line into a structured shape → filter/aggregate.
+  Practice writing a small parser + reducer combo quickly and cleanly.
 
 ## Mindset
-You're stronger than this test's bar — the risk is rushing a silly bug, not capability.
-Run often, keep it simple, handle empty/edge states, and narrate assumptions. Do the
-practice tasks here + the `ramp-fe-practice` bugs once, timed, and you'll walk in loose.
+You're stronger than this test's bar — the risk is a rushed bug or a boundary-condition
+miss under time pressure, not raw capability. Run your code often, keep it simple, narrate
+assumptions, and don't reach for cleverness when a hash map and a for-loop will do.
+
+## Save for later — the React round
+The `src/VoiceSearch.tsx` bug-fix/debounce tasks and `ramp-fe-practice` are real prep,
+just for the later live "practical coding" round (real-world React component debugging),
+not this upcoming async screen. Don't burn prep time there right now.
 
 ## Integrity
 Practice the patterns here; take the real screen yourself. CoderPad records the

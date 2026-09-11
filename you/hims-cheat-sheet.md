@@ -9,7 +9,7 @@ Org-wide frontend architecture leadership: set the architectural vision for cust
 
 ## Signature stories
 1. **Redesign design system + governance.** 50+ component system (Storybook + Chromatic) across a 10–15 eng org, 30% dev-time cut, visual-regression governance, onboarding method (backend → prod React in a month), IC→Director staying hands-on. → design systems at scale + standards + mentorship.
-2. **ForgeKit — DX as a product.** Open-source CLI + MCP suite, 5,700+ installs, standardizes design-to-code scaffolding and conventions. → developer experience, tooling, architecture.
+2. **ForgeKit — DX as a product.** Open-source CLI + MCP suite, 6,200+ installs, standardizes design-to-code scaffolding and conventions. → developer experience, tooling, architecture.
 3. **Emscripten browser CV (NARS).** Compiled OpenCV→JS via Emscripten for real-time in-browser CV. → deep UI-performance credibility.
 4. **Monorepo architecture (Pineapple / PHC).** Nx monorepos + shared libraries across 8+ apps, 30+ shared libs. → shared frontend infrastructure across teams.
 
