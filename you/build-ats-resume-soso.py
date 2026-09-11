@@ -26,12 +26,8 @@ SUMMARY=("Principal Frontend Engineer with 15 years building production UI syste
  "React, not Vue; ramps fast on new stacks by design, not exception. Seeking Principal / Senior Frontend, full-stack, and "
  "creative-technology roles.")
 JOBS=[
- ("Frontend Engineer, AI Evaluation & Red-Teaming (Contract)","Handshake","Jun 2026 - Jul 2026",None,[
-   "Assessed real-world code quality and red-teamed AI models on frontend/React engineering tasks, authoring adversarial cases to break model outputs and surface failure modes."]),
- ("Frontend Engineer, AI Model Evaluation (Contract)","micro1","Apr 2026 - May 2026",None,[
-   "Ranked and scored AI model outputs against evaluation rubrics on React/TypeScript coding tasks, with adversarial testing to expose model weaknesses."]),
- ("Frontend Engineer, AI Model Evaluation (Contract)","Mercor","Feb 2026 - Mar 2026",None,[
-   "Evaluated and ranked AI model outputs against scoring rubrics on advanced frontend/React tasks; probed models with adversarial cases to surface failure modes."]),
+ ("Frontend Engineer, AI Model Evaluation & Red-Teaming (Contract)","Independent Contractor \u2014 Mercor, micro1, Handshake","Feb 2026 - Jul 2026",None,[
+   "Evaluated, ranked, and red-teamed frontier AI model outputs against scoring rubrics on React/TypeScript frontend-engineering tasks across three sequential contract engagements (Mercor, then micro1, then Handshake); authored adversarial test cases to expose model failure modes and break outputs. Worked in ChatGPT Pro and Cursor across four frontier LLMs throughout."]),
  ("Staff Frontend Engineer & Tech Lead to Engineering Director","Redesign Health","Jul 2022 - May 2024",None,[
    "Promoted twice to Engineering Director; led delivery across three cross-functional teams (15+ members) while staying hands-on as a frontend architecture SME.",
    "Spearheaded a React design system of 50+ reusable components (Storybook + Chromatic) adopted across teams: 30% dev-time reduction across a 10-15 engineer org.",
