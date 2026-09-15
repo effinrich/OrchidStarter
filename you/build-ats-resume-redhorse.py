@@ -70,6 +70,8 @@ PROJECTS=[
   "Curated, link-verified directory of Model Context Protocol servers (18 official + community, searchable and filterable). Built with Claude Code. Astro (Zod-validated content collections + islands architecture), TypeScript, Vitest, and Playwright; Lighthouse 100 accessibility, 97 performance."),
  ("Tidy App (tidyapp.me)",
   "Offline-first React Native + Expo app; Zustand + TanStack Query; Supabase; Figma Code Connect; 90% test coverage. Built with both Claude Code and Cursor, including production use of Cursor's background agent (verified via git co-author trailers on merged PRs) - real, shipped experience with autonomous agent workflows, not just interactive pairing."),
+ ("Serial One (app.serialone.io) - Dec 2021 - Jan 2022",
+  "Turborepo monorepo browsing live Candy Digital NFT sale listings (MLB-licensed digital trading cards), pulling data from MongoDB and filterable by player name and rarity tier, rendered in a masonry grid (price, sale date, edition number per card). Coinbase Commerce crypto-donation checkout integrated in the nav. Next.js, React, Chakra UI, MongoDB, axios, SWR."),
  ("Perch - open-source voice-assistant widget",
   "Drop-in voice AI for any website (one script tag + React SDK) built on ElevenLabs Conversational AI: dependency-free Shadow-DOM core, React SDK, and a serverless signed-URL proxy that keeps the API key server-side. Built end-to-end with Claude Code."),
  ("Santa Chat AI - AI-powered Santa Claus experience",

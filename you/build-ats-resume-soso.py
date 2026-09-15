@@ -70,6 +70,8 @@ PROJECTS=[
   "Paste design tokens (Figma variables, CSS custom properties, or a Tailwind config) and get a live preview plus exportable theme code for Tailwind, Chakra, and shadcn/ui, with server-rendered Save & Share links. React Router (framework mode: SSR, loaders, actions), React 19, TypeScript, Tailwind CSS 4, Supabase (RLS + SECURITY DEFINER RPCs, IP rate-limiting), Vitest + Playwright; Lighthouse 100 accessibility, 99 performance."),
  ("Tidy App (tidyapp.me)",
   "Offline-first React Native + Expo app; Zustand + TanStack Query; Supabase; Figma Code Connect; 90% test coverage."),
+ ("Serial One (app.serialone.io) - Dec 2021 - Jan 2022",
+  "Turborepo monorepo browsing live Candy Digital NFT sale listings (MLB-licensed digital trading cards), pulling data from MongoDB and filterable by player name and rarity tier, rendered in a masonry grid (price, sale date, edition number per card). Coinbase Commerce crypto-donation checkout integrated in the nav. Next.js, React, Chakra UI, MongoDB, axios, SWR."),
 ]
 SKILLS=[
  ("Languages","JavaScript (15 yrs), TypeScript (strict), HTML5, CSS3, SQL, PHP (legacy)"),
