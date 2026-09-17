@@ -12,7 +12,7 @@ Evaluating humans (edited Redesign's coding assessment) + evaluating AI (Mercor 
 NEVER say "backend's the easy part." Confidence about your reach, respect for the craft.
 
 ## MCP / AI-native (your differentiator at THIS company)
-- You author MCP servers (ForgeKit) — at the company that created MCP. 5,700+ installs, built solo.
+- You author MCP servers (ForgeKit) — at the company that created MCP. 6,200+ installs, built solo.
 - Daily Claude Code / Cursor; you build agent-facing tooling, not just consume it.
 
 ## Their questions → your move

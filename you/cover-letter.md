@@ -12,7 +12,7 @@ Dear [Hiring Manager / Hiring Team],
 
 [HOOK — e.g., "The way [Company] is rethinking how brands get discovered by LLMs is exactly the kind of problem I want to be building on."]
 
-I'm a frontend engineer with 15 years building the systems layer of product — design systems, component libraries, and the developer tooling that makes a whole team ship faster. Most recently I founded ForgeKit, an open-source CLI + MCP server suite that bridges Figma to React and makes design systems legible to AI coding agents; it's crossed 5,700+ npm installs in production. Before that I went from senior IC to Engineering Director at Redesign Health, where I built a 50+ component design system that cut development time ~30% and trained backend engineers to production-level React in a month.
+I'm a frontend engineer with 15 years building the systems layer of product — design systems, component libraries, and the developer tooling that makes a whole team ship faster. Most recently I founded ForgeKit, an open-source CLI + MCP server suite that bridges Figma to React and makes design systems legible to AI coding agents; it's crossed 6,200+ npm installs in production. Before that I went from senior IC to Engineering Director at Redesign Health, where I built a 50+ component design system that cut development time ~30% and trained backend engineers to production-level React in a month.
 
 For [Role] specifically: [FIT — tie your experience to the role's core need]. I'm at my best where ambiguity is high and ownership is real — I've done zero-to-one at five startups and shipped ForgeKit solo — and I work AI-native by default, authoring MCP tooling and using Claude Code and Cursor to move fast without sacrificing quality.
 
